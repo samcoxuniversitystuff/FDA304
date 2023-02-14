@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class p1Movement : MonoBehaviour
 {
-    Rigidbody2D rb2d;
+    [SerializeField] Rigidbody2D rb2d;
 
-    int movementSpeed = 3;
+    [SerializeField] Animator _a;
+    [SerializeField] float movementSpeed = 3f;
+    [SerializeField] Vector2 movementDirection;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +17,36 @@ public class p1Movement : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        UpdateMovementDirection();
+    }
+
+    void UpdateAnimation()
+    {
+        _a.SetFloat("Horizontal", movementDirection.x);
+        _a.SetFloat("Vertical", movementDirection.y);
+        _a.SetFloat("Speed", movementDirection.sqrMagnitude);
+    }
+
     void FixedUpdate()
     {
-        MovePlayerOld();   
+        MovePlayer();
     }
+
+
+    void UpdateMovementDirection()
+    {
+        movementDirection.x = Input.GetAxisRaw("Horizontal");
+        movementDirection.y = Input.GetAxisRaw("Vertical");
+    }
+
+    void MovePlayer()
+    {
+        rb2d.MovePosition(rb2d.position + movementDirection * (movementSpeed * Time.fixedDeltaTime));
+    }
+
+
 
     void MovePlayerOld()
     {
