@@ -47,6 +47,9 @@ TagManager:
   - name: Player
     uniqueID: 853351085
     locked: 0
+  - name: Pavement
+    uniqueID: 497812397
+    locked: 0
   - name: Buildings
     uniqueID: 2125169865
     locked: 0

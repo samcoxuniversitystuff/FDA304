@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2227,11 +2227,11 @@ TextureImporter:
       Small-8-Direction-Characters_by_AxulArt_64: -1785313072
       Small-8-Direction-Characters_by_AxulArt_73: -18890044
       Small-8-Direction-Characters_by_AxulArt_0: -1956832276
-      Small-8-Direction-Characters_by_AxulArt_17: -865820883
       Small-8-Direction-Characters_by_AxulArt_70: 1696242002
+      Small-8-Direction-Characters_by_AxulArt_17: -865820883
       Small-8-Direction-Characters_by_AxulArt_34: -689862668
-      Small-8-Direction-Characters_by_AxulArt_24: -790432621
       Small-8-Direction-Characters_by_AxulArt_48: 1714823207
+      Small-8-Direction-Characters_by_AxulArt_24: -790432621
       Small-8-Direction-Characters_by_AxulArt_88: -1254568110
       Small-8-Direction-Characters_by_AxulArt_20: 1339589652
       Small-8-Direction-Characters_by_AxulArt_27: -1482023907
@@ -2273,13 +2273,13 @@ TextureImporter:
       Small-8-Direction-Characters_by_AxulArt_81: -1845492065
       Small-8-Direction-Characters_by_AxulArt_22: 1656084011
       Small-8-Direction-Characters_by_AxulArt_7: 394139795
-      Small-8-Direction-Characters_by_AxulArt_4: -1446834151
       Small-8-Direction-Characters_by_AxulArt_36: -899860500
+      Small-8-Direction-Characters_by_AxulArt_40: 1362810203
       Small-8-Direction-Characters_by_AxulArt_15: -625324757
       Small-8-Direction-Characters_by_AxulArt_41: 781964554
-      Small-8-Direction-Characters_by_AxulArt_40: 1362810203
-      Small-8-Direction-Characters_by_AxulArt_52: 760017641
       Small-8-Direction-Characters_by_AxulArt_46: -1875979198
+      Small-8-Direction-Characters_by_AxulArt_4: -1446834151
+      Small-8-Direction-Characters_by_AxulArt_52: 760017641
       Small-8-Direction-Characters_by_AxulArt_9: 1922214734
       Small-8-Direction-Characters_by_AxulArt_25: -742232321
       Small-8-Direction-Characters_by_AxulArt_72: -1538523609
