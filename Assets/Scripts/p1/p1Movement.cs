@@ -20,6 +20,7 @@ public class p1Movement : MonoBehaviour
     void Update()
     {
         UpdateMovementDirection();
+        UpdateAnimation();
     }
 
     void UpdateAnimation()

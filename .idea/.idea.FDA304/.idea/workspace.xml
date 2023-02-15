@@ -389,7 +389,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Art/Kenney/isometriclandscape/PNG/landscapeTiles_126.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Kenney/isometriclandscape/PNG/landscapeTiles_126.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Kenney/isometriclandscape/PNG/landscapeTiles_127.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Kenney/isometriclandscape/PNG/landscapeTiles_127.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -466,7 +465,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676412537633</updated>
-      <workItem from="1676412547013" duration="2426000" />
+      <workItem from="1676412547013" duration="3054000" />
     </task>
     <servers />
   </component>
