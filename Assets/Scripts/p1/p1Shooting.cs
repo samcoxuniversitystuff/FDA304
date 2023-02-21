@@ -43,7 +43,7 @@ public class p1Shooting : MonoBehaviour
         {
             gunBarrel = South.transform;
         }
-        else if (p1Direction.x == 0 && p1Direction.y == -1) // North.
+        else if (p1Direction.x == 0 && p1Direction.y == 1) // North.
         {
             gunBarrel = North.transform;
         }
