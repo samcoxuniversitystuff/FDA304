@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class p1Movement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb2d;
 
-    [SerializeField] Animator _a;
+    [FormerlySerializedAs("a")] [FormerlySerializedAs("_a")] [SerializeField] Animator playerAnimator;
     [SerializeField] float movementSpeed = 3f;
     [SerializeField] Vector2 movementDirection;
+
+    public Camera gameCam;
+    private Vector2 _mousePosition;
 
     // Start is called before the first frame update
     void Start()
@@ -21,19 +25,31 @@ public class p1Movement : MonoBehaviour
     {
         UpdateMovementDirection();
         UpdateAnimation();
-    }
+        /*
+        _mousePosition = gameCam.ScreenToWorldPoint(Input.mousePosition);
+        */
 
-    void UpdateAnimation()
-    {
-        _a.SetFloat("Horizontal", movementDirection.x);
-        _a.SetFloat("Vertical", movementDirection.y);
-        _a.SetFloat("Speed", movementDirection.sqrMagnitude);
-    }
 
+    }
+    
     void FixedUpdate()
     {
         MovePlayer();
+        /*
+        Vector2 viewingDirection = _mousePosition - rb2d.position;
+        float cAngle = Mathf.Atan2(viewingDirection.y, viewingDirection.x) * Mathf.Rad2Deg - 90f;
+        rb2d.rotation = cAngle;
+        */
     }
+
+
+    void UpdateAnimation()
+    {
+        playerAnimator.SetFloat("Horizontal", movementDirection.x);
+        playerAnimator.SetFloat("Vertical", movementDirection.y);
+        playerAnimator.SetFloat("Speed", movementDirection.sqrMagnitude);
+    }
+
 
 
     void UpdateMovementDirection()

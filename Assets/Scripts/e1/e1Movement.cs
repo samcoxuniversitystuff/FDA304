@@ -31,8 +31,8 @@ public class e1Movement : MonoBehaviour
         // Occurs if the player's calculated distance is greater than the allotted distance.
         if (playerDistance > maxDistance)
         {
-            _rigidbody2D.velocity = ((_p1Movement.transform.position - transform.position).normalized) * enemySpeed * Time.fixedDeltaTime;
-            // _rigidbody2D.MovePosition(Vector2.MoveTowards(transform.position, _p1Movement.transform.position, enemySpeed * Time.deltaTime));
+            // _rigidbody2D.velocity = ((_p1Movement.transform.position - transform.position).normalized) * enemySpeed * Time.fixedDeltaTime;
+            _rigidbody2D.MovePosition(Vector2.MoveTowards(transform.position, _p1Movement.transform.position, enemySpeed * Time.deltaTime));
         }
         else if (playerDistance < maxDistance)
         {
