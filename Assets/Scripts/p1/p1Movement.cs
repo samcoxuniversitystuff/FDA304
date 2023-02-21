@@ -85,4 +85,9 @@ public class p1Movement : MonoBehaviour
         }
 
     }
+
+    public Vector2 GetPlayerDirection()
+    {
+        return movementDirection;
+    }
 }
