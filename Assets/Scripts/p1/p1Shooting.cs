@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,6 +31,11 @@ public class p1Shooting : MonoBehaviour
     {
         gunBarrelUpdate();
 
+
+    }
+
+    private void FixedUpdate()
+    {
         if (Input.GetButtonDown("Fire1"))
         {
             BulletCreation();
@@ -65,6 +71,6 @@ public class p1Shooting : MonoBehaviour
     {
         GameObject projectile = Instantiate(bullet, gunBarrel.position, gunBarrel.rotation);
         Rigidbody2D bulletRb = projectile.GetComponent<Rigidbody2D>();
-        bulletRb.AddForce(gunBarrel.up * bulletImpact, ForceMode2D.Impulse);
+        bulletRb.AddForce(gunBarrel.up * bulletImpact * Time.fixedDeltaTime, ForceMode2D.Impulse);
     }
 }

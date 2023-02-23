@@ -2,13 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Serialization;
 
 
 public class b1 : MonoBehaviour
 {
     Rigidbody2D _rigidbody2D;
-    private float _bulletSpeed = 20f;
+    [FormerlySerializedAs("_bulletSpeed")] [SerializeField] private float bulletSpeed = 20f;
     float _timer = 3f;
     private void OnCollisionEnter2D(Collision2D col)
     {
@@ -37,7 +37,7 @@ public class b1 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidbody2D.AddForce(transform.position * _bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
+        _rigidbody2D.AddForce(transform.position * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
     }
 
     void KillBullet()
