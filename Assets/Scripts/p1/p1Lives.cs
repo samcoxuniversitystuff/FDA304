@@ -16,4 +16,9 @@ public class p1Lives : MonoBehaviour
     {
         
     }
+
+    public int GetLives()
+    {
+        return lives;
+    }
 }

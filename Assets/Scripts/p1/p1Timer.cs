@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class p1Score : MonoBehaviour
+public class p1Timer : MonoBehaviour
 {
-    private int _p1Score = 0;
+
+    [SerializeField] float timer = 60;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +18,8 @@ public class p1Score : MonoBehaviour
         
     }
 
-    public void AddScore(int scoreToAdd)
+    public float GetTimer()
     {
-        _p1Score += scoreToAdd;
-    }
-
-    public int GetScore()
-    {
-        return _p1Score;
+        return timer;
     }
 }

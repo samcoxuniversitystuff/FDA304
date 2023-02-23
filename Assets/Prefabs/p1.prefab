@@ -303,6 +303,8 @@ GameObject:
   - component: {fileID: 1091919207}
   - component: {fileID: 1091919216}
   - component: {fileID: 1783285851571486561}
+  - component: {fileID: 1118480816}
+  - component: {fileID: 1118480817}
   m_Layer: 0
   m_Name: p1
   m_TagString: Untagged
@@ -493,6 +495,32 @@ MonoBehaviour:
   East: {fileID: 4776680170322702103}
   bullet: {fileID: 636454390383353488, guid: d6cd1ee92f89e6e4b9c53fc0328ae60a, type: 3}
   bulletImpact: 60
+--- !u!114 &1118480816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6683729888029912275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1aa6aeb962cbd7468af22d1707348ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 60
+--- !u!114 &1118480817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6683729888029912275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e1a1bf066fc384cb3146b919b35868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
 --- !u!1 &7416529831493933337
 GameObject:
   m_ObjectHideFlags: 0

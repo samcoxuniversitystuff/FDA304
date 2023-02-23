@@ -253,3 +253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b40825d136ca1348b08ab0e92c8d9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _p1Timer: {fileID: 0}
+  _p1Lives: {fileID: 0}
+  _p1Score: {fileID: 0}

@@ -27,7 +27,7 @@ public class e1Movement : MonoBehaviour
     private void spotPlayer()
     {
         float playerDistance = Vector2.Distance(transform.position, _p1Movement.transform.position);
-        Debug.Log(playerDistance);
+        // Debug.Log(playerDistance);
         // Occurs if the player's calculated distance is greater than the allotted distance.
         if (playerDistance > maxDistance)
         {
