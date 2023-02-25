@@ -7,24 +7,42 @@ using UnityEngine.Serialization;
 
 public class b1 : MonoBehaviour
 {
-    private Rigidbody2D _rigidbody2D;
-    
-    [SerializeField] private float bulletSpeed = 10;
-
-    private void Start()
+    Rigidbody2D _rigidbody2D;
+    [FormerlySerializedAs("_bulletSpeed")] [SerializeField] private float bulletSpeed = 20f;
+    float _timer = 3f;
+    private void OnCollisionEnter2D(Collision2D col)
     {
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(col.gameObject);
+            Destroy(this);
+        }
+        else if (col.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(col.gameObject);
+            Destroy(this);
+        }
+    }
+
+    void Start()
+    {
+        _timer = 0;
         _rigidbody2D = GetComponent<Rigidbody2D>();
-
     }
 
-    private void Update()
+    void Update()
     {
-        
+        _timer -= Time.deltaTime;
+
+        if (_timer <= 0.0f)
+        { 
+            KillBullet();       
+        }
     }
 
-    private void FixedUpdate()
+    void KillBullet()
     {
-        _rigidbody2D.velocity = new Vector2(transform.forward.x * bulletSpeed, transform.forward.y * bulletSpeed);
+        Destroy(this);
     }
 }
 
