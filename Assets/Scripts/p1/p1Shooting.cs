@@ -1,76 +1,78 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class p1Shooting : MonoBehaviour
 {
-    [SerializeField] private Transform gunBarrel;
-    [SerializeField] GameObject South;
-    [SerializeField] GameObject North;
-    [SerializeField] GameObject West;
-    [SerializeField] GameObject East;
-    Transform originalGunPosition;
-
     [SerializeField] private GameObject bullet;
-    [SerializeField] private float bulletImpact;
+    [SerializeField] private float bulletForceAmount = 10;
+    [SerializeField] private GameObject fireObject;
+    [SerializeField] private GameObject originalFireObject;
 
-    p1Movement _p1movement;
-    Vector2 p1Direction;
+    private p1Movement _p1Movement;
+    private Vector2 _p1Direction;
+    [SerializeField] private GameObject bNorth;
+    [SerializeField] private GameObject bSouth;
+    [SerializeField] private GameObject bEast;
+    [SerializeField] private GameObject bWest;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        _p1movement = GetComponent<p1Movement>();
-        originalGunPosition = gunBarrel;
+        _p1Movement = FindObjectOfType<p1Movement>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        gunBarrelUpdate();
-
-
+        SetShootingDirection();
+        ShootBullet();
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            BulletCreation();
-        }
+
     }
 
-    void gunBarrelUpdate()
+    void SetShootingDirection()
     {
-        p1Direction = _p1movement.GetPlayerDirection();
-        if (p1Direction.x == 0 && p1Direction.y == -1) // South.
+        _p1Direction = _p1Movement.GetPlayerDirection();
+        if (_p1Direction.x == 0 && _p1Direction.y == -1) // South.
         {
-            gunBarrel = South.transform;
+            fireObject.transform.position = bSouth.transform.position;
+            fireObject.transform.rotation = bSouth.transform.rotation;
         }
-        else if (p1Direction.x == 0 && p1Direction.y == 1) // North.
+        else if (_p1Direction.x == 0 && _p1Direction.y == 1) // North.
         {
-            gunBarrel = North.transform;
+            fireObject.transform.position = bNorth.transform.position;
+            fireObject.transform.rotation = bNorth.transform.rotation;
         }
-        else if (p1Direction.x == 1 && p1Direction.y == 0) // East.
+        else if (_p1Direction.x == 1 && _p1Direction.y == 0) // East.
         {
-            gunBarrel = East.transform;
-        } 
-        else if (p1Direction.x == -1 && p1Direction.y == 0) // West.
+            fireObject.transform.position = bEast.transform.position;
+            fireObject.transform.rotation = bEast.transform.rotation;
+        }
+        else if (_p1Direction.x == -1 && _p1Direction.y == 0) // West.
         {
-            gunBarrel = West.transform;
+            fireObject.transform.position = bWest.transform.position;
+            fireObject.transform.rotation = bWest.transform.rotation;
         }
         else
         {
-            gunBarrel = originalGunPosition;
+            fireObject.transform.position = bSouth.transform.position;
+            fireObject.transform.rotation = bSouth.transform.rotation;
         }
     }
 
-    void BulletCreation()
+    void ShootBullet()
     {
-        GameObject projectile = Instantiate(bullet, gunBarrel.position, gunBarrel.rotation);
-        Rigidbody2D bulletRb = projectile.GetComponent<Rigidbody2D>();
-        bulletRb.AddForce(gunBarrel.up * bulletImpact * Time.fixedDeltaTime, ForceMode2D.Impulse);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject _bulletOBJ = Instantiate(bullet, fireObject.transform.position, fireObject.transform.rotation) as GameObject;
+            Rigidbody2D _bulletRB = _bulletOBJ.GetComponent<Rigidbody2D>();
+            _bulletRB.AddForce(fireObject.transform.forward * bulletForceAmount , ForceMode2D.Impulse);
+            
+        }
     }
 }

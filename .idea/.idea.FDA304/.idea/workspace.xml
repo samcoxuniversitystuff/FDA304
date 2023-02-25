@@ -4,7 +4,7 @@
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lvl01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" afterDir="false" />
@@ -89,6 +89,8 @@
       <workItem from="1676988722803" duration="107000" />
       <workItem from="1676988868868" duration="4843000" />
       <workItem from="1677142936141" duration="3346000" />
+      <workItem from="1677248750340" duration="4485000" />
+      <workItem from="1677317685139" duration="5309000" />
     </task>
     <servers />
   </component>

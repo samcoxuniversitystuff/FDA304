@@ -17,6 +17,11 @@ public class b1 : MonoBehaviour
             Destroy(col.gameObject);
             Destroy(this);
         }
+        else if (col.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(col.gameObject);
+            Destroy(this);
+        }
     }
 
     void Start()
@@ -33,11 +38,6 @@ public class b1 : MonoBehaviour
         { 
             KillBullet();       
         }
-    }
-
-    private void FixedUpdate()
-    {
-        _rigidbody2D.AddForce(transform.position * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
     }
 
     void KillBullet()
