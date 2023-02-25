@@ -9,6 +9,7 @@ public class b1 : MonoBehaviour
 {
     Rigidbody2D _rigidbody2D;
     [FormerlySerializedAs("_bulletSpeed")] [SerializeField] private float bulletSpeed = 20f;
+    [SerializeField] private float buffer = 0.5f;
     float _timer = 3f;
     private void OnCollisionEnter2D(Collision2D col)
     {
