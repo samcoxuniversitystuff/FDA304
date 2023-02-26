@@ -11,6 +11,8 @@ public class b1 : MonoBehaviour
     Rigidbody2D _rigidbody2D;
     public Vector3 BulletDirection;
     [SerializeField] float timer = 3f;
+    
+    [SerializeField] private ParticleSystem explosion;
 
     private void OnCollisionEnter2D(Collision2D col)
     {

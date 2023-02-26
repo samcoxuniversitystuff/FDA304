@@ -46,14 +46,22 @@ public class p1Shooting : MonoBehaviour
     {
         switch (xDirection)
         {
-            case 0 when yDirection == -1:
+            case 0 when yDirection == -1: // Start of first 4 coordinates. 
                 return pDown.position;
             case 0 when yDirection == 1:
                 return pUp.position;
             case 1 when yDirection == 0:
                 return pRight.position;
             case -1 when yDirection == 0:
-                return pLeft.position;
+                return pLeft.position; // End of first 4 coordinates.
+            case -1 when yDirection == 1: // Start of other 4 coordinates. 
+                return pUpLeft.position; 
+            case 1 when yDirection == 1:
+                return pUpRight.position;
+            case -1 when yDirection == -1:
+                return pDownLeft.position;
+            case 1 when yDirection == -1:
+                return pDownRight.position; // End of other 4 coordinates.
             default:
                 return pDown.position;
         }
@@ -63,14 +71,22 @@ public class p1Shooting : MonoBehaviour
     {
         switch (xDirection)
         {
-            case 0 when yDirection == -1:
+            case 0 when yDirection == -1: // Start of first 4 coordinates. 
                 return Vector2.down;
             case 0 when yDirection == 1:
                 return Vector2.up;
             case 1 when yDirection == 0:
                 return Vector2.right;
             case -1 when yDirection == 0:
-                return Vector2.left;
+                return Vector2.left; // End of first 4 coordinates.
+            case -1 when yDirection == 1: // Start of other 4 coordinates. 
+                return (Vector2.left + Vector2.up);
+            case 1 when yDirection == 1:
+                return (Vector2.right + Vector2.up);
+            case -1 when yDirection == -1:
+                return (Vector2.left + Vector2.down);
+            case 1 when yDirection == -1:
+                return (Vector2.right + Vector2.down); // End of other 4 coordinates.
             default:
                 return Vector2.down;
         }
