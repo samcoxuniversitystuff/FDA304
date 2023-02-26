@@ -14,11 +14,11 @@ public class p1Shooting : MonoBehaviour
 
     private p1Movement _p1Movement;
     private Vector2 _p1Direction;
-    [SerializeField] private GameObject bNorth;
-    [SerializeField] private GameObject bSouth;
-    [SerializeField] private GameObject bEast;
-    [SerializeField] private GameObject bWest;
 
+    [SerializeField] private Transform pUp;
+    [SerializeField] private Transform pDown;
+    [SerializeField] private Transform pLeft;
+    [SerializeField] private Transform pRight;
     private void Start()
     {
         _p1Movement = FindObjectOfType<p1Movement>();
@@ -37,6 +37,11 @@ public class p1Shooting : MonoBehaviour
 
     }
 
+    Vector2 GetShootingPosition()
+    {
+        return pDown.position;
+    }
+
     Vector2 GetShootingDirection()
     {
         return Vector2.down;
@@ -46,7 +51,7 @@ public class p1Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject _bulletOBJ = Instantiate(bullet, fireObject.transform.position, quaternion.identity) as GameObject;
+            GameObject _bulletOBJ = Instantiate(bullet, GetShootingPosition(), quaternion.identity) as GameObject;
             Rigidbody2D _bulletRB = _bulletOBJ.GetComponent<Rigidbody2D>();
             b1 b1Script = _bulletOBJ.GetComponent<b1>();
             _bulletRB.velocity = GetShootingDirection();
