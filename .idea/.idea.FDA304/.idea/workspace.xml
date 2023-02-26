@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-    </list>
+    <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +84,7 @@
       <workItem from="1677142936141" duration="3346000" />
       <workItem from="1677248750340" duration="4485000" />
       <workItem from="1677317685139" duration="5904000" />
-      <workItem from="1677365176352" duration="13643000" />
+      <workItem from="1677365176352" duration="14069000" />
     </task>
     <servers />
   </component>
