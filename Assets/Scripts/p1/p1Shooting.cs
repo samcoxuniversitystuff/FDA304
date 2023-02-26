@@ -13,7 +13,8 @@ public class p1Shooting : MonoBehaviour
     [SerializeField] private GameObject originalFireObject;
 
     private p1Movement _p1Movement;
-    private Vector2 _p1Direction;
+    private float xDirection;
+    private float yDirection;
 
     [SerializeField] private Transform pUp;
     [SerializeField] private Transform pDown;
@@ -26,8 +27,8 @@ public class p1Shooting : MonoBehaviour
 
     private void Update()
     {
-        float xDirection = _p1Movement.GetPlayerDirection().x;
-        float yDirection = _p1Movement.GetPlayerDirection().y;
+        xDirection = _p1Movement.GetPlayerDirection().x;
+        yDirection = _p1Movement.GetPlayerDirection().y;
         Debug.Log("X = " + xDirection + " " + "Y = " + yDirection);
         ShootBullet();
     }
@@ -39,12 +40,36 @@ public class p1Shooting : MonoBehaviour
 
     Vector2 GetShootingPosition()
     {
-        return pDown.position;
+        switch (xDirection)
+        {
+            case 0 when yDirection == -1:
+                return pDown.position;
+            case 0 when yDirection == 1:
+                return pUp.position;
+            case 1 when yDirection == 0:
+                return pRight.position;
+            case -1 when yDirection == 0:
+                return pLeft.position;
+            default:
+                return pDown.position;
+        }
     }
 
     Vector2 GetShootingDirection()
     {
-        return Vector2.down;
+        switch (xDirection)
+        {
+            case 0 when yDirection == -1:
+                return Vector2.down;
+            case 0 when yDirection == 1:
+                return Vector2.up;
+            case 1 when yDirection == 0:
+                return Vector2.right;
+            case -1 when yDirection == 0:
+                return Vector2.left;
+            default:
+                return Vector2.down;
+        }
     }
 
     void ShootBullet()

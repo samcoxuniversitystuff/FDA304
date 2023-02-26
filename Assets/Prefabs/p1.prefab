@@ -524,10 +524,10 @@ MonoBehaviour:
   bulletForceAmount: 50
   fireObject: {fileID: 5223756530392045689}
   originalFireObject: {fileID: 5223756530392045689}
-  up: {fileID: 5510718268486263753}
-  down: {fileID: 1770477203726667023}
-  left: {fileID: 7807220834195319275}
-  right: {fileID: 7287785658934432912}
+  pUp: {fileID: 5510718268486263753}
+  pDown: {fileID: 1770477203726667023}
+  pLeft: {fileID: 7807220834195319275}
+  pRight: {fileID: 7287785658934432912}
 --- !u!114 &1118480816
 MonoBehaviour:
   m_ObjectHideFlags: 0
