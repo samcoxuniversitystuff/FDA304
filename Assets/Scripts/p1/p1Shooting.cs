@@ -79,7 +79,7 @@ public class p1Shooting : MonoBehaviour
             GameObject _bulletOBJ = Instantiate(bullet, GetShootingPosition(), quaternion.identity) as GameObject;
             Rigidbody2D _bulletRB = _bulletOBJ.GetComponent<Rigidbody2D>();
             b1 b1Script = _bulletOBJ.GetComponent<b1>();
-            _bulletRB.velocity = GetShootingDirection();
+            _bulletRB.velocity = GetShootingDirection() * bulletForceAmount;
         }
     }
 }
