@@ -26,6 +26,9 @@ public class p1Shooting : MonoBehaviour
 
     private void Update()
     {
+        float xDirection = _p1Movement.GetPlayerDirection().x;
+        float yDirection = _p1Movement.GetPlayerDirection().y;
+        Debug.Log("X = " + xDirection + " " + "Y = " + yDirection);
         ShootBullet();
     }
 
@@ -34,13 +37,19 @@ public class p1Shooting : MonoBehaviour
 
     }
 
+    Vector2 GetShootingDirection()
+    {
+        return Vector2.down;
+    }
+
     void ShootBullet()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject _bulletOBJ = Instantiate(bullet, fireObject.transform.position, fireObject.transform.rotation) as GameObject;
+            GameObject _bulletOBJ = Instantiate(bullet, fireObject.transform.position, quaternion.identity) as GameObject;
             Rigidbody2D _bulletRB = _bulletOBJ.GetComponent<Rigidbody2D>();
             b1 b1Script = _bulletOBJ.GetComponent<b1>();
+            _bulletRB.velocity = GetShootingDirection();
         }
     }
 }
