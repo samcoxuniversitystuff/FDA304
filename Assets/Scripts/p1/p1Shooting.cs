@@ -18,6 +18,12 @@ public class p1Shooting : MonoBehaviour
     [SerializeField] private Transform pDown;
     [SerializeField] private Transform pLeft;
     [SerializeField] private Transform pRight;
+
+    [SerializeField] private Transform pUpLeft;
+    [SerializeField] private Transform pUpRight;
+    [SerializeField] private Transform pDownLeft;
+    [SerializeField] private Transform pDownRight;
+    
     private void Start()
     {
         _p1Movement = FindObjectOfType<p1Movement>();

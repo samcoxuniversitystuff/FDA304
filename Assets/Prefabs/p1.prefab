@@ -782,6 +782,10 @@ MonoBehaviour:
   pDown: {fileID: 1770477203726667023}
   pLeft: {fileID: 7807220834195319275}
   pRight: {fileID: 7287785658934432912}
+  pUpLeft: {fileID: 3918387463660138534}
+  pUpRight: {fileID: 3076731374584773997}
+  pDownLeft: {fileID: 8518304873083358241}
+  pDownRight: {fileID: 6039796883503585906}
 --- !u!114 &1118480816
 MonoBehaviour:
   m_ObjectHideFlags: 0
