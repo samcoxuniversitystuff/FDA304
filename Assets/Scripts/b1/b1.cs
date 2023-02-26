@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Vector2 = System.Numerics.Vector2;
@@ -12,7 +13,8 @@ public class b1 : MonoBehaviour
     public Vector3 BulletDirection;
     [SerializeField] float timer = 3f;
     
-    [SerializeField] private ParticleSystem explosion;
+    [SerializeField] private GameObject explosion;
+    [SerializeField] private AudioClip explosionPoint;
 
     private void OnCollisionEnter2D(Collision2D col)
     {
@@ -24,6 +26,8 @@ public class b1 : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Enemy"))
         {
+            Instantiate(explosion, transform.position, quaternion.identity);
+            AudioSource.PlayClipAtPoint(explosionPoint, transform.position, 1);
             Destroy(col.gameObject);
             Destroy(this.gameObject);
             Debug.Log("Enemy destroyed.");
