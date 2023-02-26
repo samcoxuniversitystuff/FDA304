@@ -15,16 +15,17 @@ public class b1 : MonoBehaviour
     float _timer = 3f;
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(col.gameObject);
-            Destroy(this);
-        }
-        else if (col.gameObject.CompareTag("Bullet"))
+        if (col.gameObject.CompareTag("Bullet"))
         {
             Destroy(col.gameObject);
             Destroy(this);
             Debug.Log("Bullet destroyed.");
+        }
+        else if (col.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(col.gameObject);
+            Destroy(this);
+            Debug.Log("Enemy destroyed.");
         }
     }
 
