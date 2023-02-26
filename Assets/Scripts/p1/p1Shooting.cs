@@ -9,8 +9,6 @@ public class p1Shooting : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
     [SerializeField] private float bulletForceAmount = 10;
-    [SerializeField] private GameObject fireObject;
-    [SerializeField] private GameObject originalFireObject;
 
     private p1Movement _p1Movement;
     private float xDirection;

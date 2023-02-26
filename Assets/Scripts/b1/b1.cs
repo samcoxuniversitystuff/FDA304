@@ -10,35 +10,38 @@ public class b1 : MonoBehaviour
 {
     Rigidbody2D _rigidbody2D;
     public Vector3 BulletDirection;
-    [SerializeField] private float bulletSpeed = 20f;
-    [SerializeField] private float buffer = 0.5f;
-    float _timer = 3f;
+    [SerializeField] float timer = 3f;
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Bullet"))
         {
             Destroy(col.gameObject);
-            Destroy(this);
+            Destroy(this.gameObject);
             Debug.Log("Bullet destroyed.");
         }
         else if (col.gameObject.CompareTag("Enemy"))
         {
             Destroy(col.gameObject);
-            Destroy(this);
+            Destroy(this.gameObject);
             Debug.Log("Enemy destroyed.");
         }
+
     }
 
-    void Start()
+    private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
-
-    void Update()
-    {
-        
-    }
     
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if (timer <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
 
 // https://answers.unity.com/questions/351420/simple-timer-1.html
