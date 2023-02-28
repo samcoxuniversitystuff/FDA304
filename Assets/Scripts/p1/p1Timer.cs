@@ -15,7 +15,12 @@ public class p1Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer -= Time.deltaTime;
+        if (timer <= 0)
+        {
+            p1Lives _p1lives = GetComponent<p1Lives>();
+            _p1lives.SetLives(0);
+        }
     }
 
     public float GetTimer()

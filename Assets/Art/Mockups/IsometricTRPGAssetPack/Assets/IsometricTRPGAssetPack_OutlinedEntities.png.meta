@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2972,12 +2972,12 @@ TextureImporter:
       IsometricTRPGAssetPack_OutlinedEntities_100: 468213388
       IsometricTRPGAssetPack_OutlinedEntities_128: 1864922090
       IsometricTRPGAssetPack_OutlinedEntities_1: -148242207
-      IsometricTRPGAssetPack_OutlinedEntities_9: 449125431
+      IsometricTRPGAssetPack_OutlinedEntities_13: 220866430
       IsometricTRPGAssetPack_OutlinedEntities_64: 451397550
       IsometricTRPGAssetPack_OutlinedEntities_49: -395054878
       IsometricTRPGAssetPack_OutlinedEntities_31: 1480501805
       IsometricTRPGAssetPack_OutlinedEntities_73: -157866848
-      IsometricTRPGAssetPack_OutlinedEntities_13: 220866430
+      IsometricTRPGAssetPack_OutlinedEntities_9: 449125431
       IsometricTRPGAssetPack_OutlinedEntities_46: -233177571
       IsometricTRPGAssetPack_OutlinedEntities_113: -603459747
       IsometricTRPGAssetPack_OutlinedEntities_28: 1831945059

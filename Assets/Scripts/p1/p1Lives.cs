@@ -14,11 +14,30 @@ public class p1Lives : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (lives <= 0)
+        {
+            KillPlayer();
+        }
+    }
+
+    void KillPlayer()
+    {
+        Destroy(this.gameObject);
     }
 
     public int GetLives()
     {
         return lives;
     }
+
+    public void SetLives(int livesToSet)
+    {
+        lives = livesToSet;
+    }
+
+    public void DeductLives(int livesToDeduct)
+    {
+        lives -= livesToDeduct;
+    }
+
 }
