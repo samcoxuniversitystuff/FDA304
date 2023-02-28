@@ -30,3 +30,6 @@ public class FinishLine : MonoBehaviour
         }
     }
 }
+
+// https://answers.unity.com/questions/1169114/how-to-load-next-scene-in-unity-5.html
+
