@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 1118480817}
   m_Layer: 0
   m_Name: p1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,6 +468,7 @@ MonoBehaviour:
   pUpRight: {fileID: 3076731374584773997}
   pDownLeft: {fileID: 8518304873083358241}
   pDownRight: {fileID: 6039796883503585906}
+  isShooting: 1
 --- !u!114 &1118480816
 MonoBehaviour:
   m_ObjectHideFlags: 0

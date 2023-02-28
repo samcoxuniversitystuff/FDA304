@@ -23,6 +23,8 @@ public class p1Shooting : MonoBehaviour
     [SerializeField] private Transform pUpRight;
     [SerializeField] private Transform pDownLeft;
     [SerializeField] private Transform pDownRight;
+
+    public bool isShooting = true; 
     
     private void Start()
     {
@@ -33,8 +35,12 @@ public class p1Shooting : MonoBehaviour
     {
         xDirection = _p1Movement.GetPlayerDirection().x;
         yDirection = _p1Movement.GetPlayerDirection().y;
-        Debug.Log("X = " + xDirection + " " + "Y = " + yDirection);
-        ShootBullet();
+        // Debug.Log("X = " + xDirection + " " + "Y = " + yDirection);
+        if (isShooting)
+        {
+            ShootBullet();
+        }
+
     }
 
     private void FixedUpdate()
