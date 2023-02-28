@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
   playerAnimator: {fileID: 6683729888029912278}
-  movementSpeed: 3
+  movementSpeed: 2
   movementDirection: {x: 0, y: 0}
   gameCam: {fileID: 4148157001685936006, guid: 2a81ae1239ac2f8419c365edc1ba8e3d, type: 3}
 --- !u!50 &1091919206
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 636454390383353488, guid: d6cd1ee92f89e6e4b9c53fc0328ae60a, type: 3}
-  bulletForceAmount: 50
+  bulletForceAmount: 10
   pUp: {fileID: 5510718268486263753}
   pDown: {fileID: 1770477203726667023}
   pLeft: {fileID: 7807220834195319275}
