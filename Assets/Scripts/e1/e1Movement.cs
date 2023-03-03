@@ -8,23 +8,26 @@ public class e1Movement : MonoBehaviour
 
     [SerializeField] float maxDistance = 5f;
     [SerializeField] private float enemySpeed = 1f;
-    private Vector2 startingPos;
+    private Vector2 _startingPos;
     private p1Movement _p1Movement;
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _p1Movement = FindObjectOfType<p1Movement>();
-        startingPos = transform.position;
+        _startingPos = transform.position;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        spotPlayer();
+        if (_p1Movement != null)
+        {
+            SpotPlayer();
+        }
     }
 
-    private void spotPlayer()
+    private void SpotPlayer()
     {
         float playerDistance = Vector2.Distance(transform.position, _p1Movement.transform.position);
         // Debug.Log(playerDistance);
