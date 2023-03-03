@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FinishObj.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FinishObj.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishObj/FinishLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishObj/FinishLine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1677317685139" duration="5904000" />
       <workItem from="1677365176352" duration="14712000" />
       <workItem from="1677437106691" duration="1624000" />
-      <workItem from="1677828405587" duration="51000" />
+      <workItem from="1677828405587" duration="707000" />
     </task>
     <servers />
   </component>
