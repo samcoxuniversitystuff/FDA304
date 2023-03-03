@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
-    [SerializeField] private float nextLevelDelay = 1.5f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +19,15 @@ public class FinishLine : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Player"))
-        {
-            StartCoroutine(NextLevel());
-        }
+
     }
 
-    IEnumerator NextLevel()
+    void OnCollision2d (Collision2D col)
     {
-        yield return new WaitForSeconds(nextLevelDelay);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (col.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
 

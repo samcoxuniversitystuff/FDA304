@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/mainmenu.unity
     guid: 762b71fe738efb543a07265ae79a8479
   - enabled: 1
-    path: Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity
-    guid: bef7b51b44dc98240be2cbe00207e987
-  - enabled: 1
     path: Assets/Scenes/lvl01.unity
     guid: bf8b63669f6945d41a529bdfdeadc2e2
   - enabled: 1
