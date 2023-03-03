@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 502cbe800bb424509ab2d125c66bfc78
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif 72pt Expanded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 40ca16b88e78c4c29b52b6e2fad1b61b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

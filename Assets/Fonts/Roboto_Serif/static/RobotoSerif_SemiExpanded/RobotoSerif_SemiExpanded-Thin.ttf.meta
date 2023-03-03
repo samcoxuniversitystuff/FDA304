@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 2366bd54f2a3e4bb3beacbe6e747dc27
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif SemiExpanded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 031b168276d1f45c6a81093ebd0dc658, type: 3}
+  - {fileID: 12800000, guid: a0ba0a0a7edd842e491d31b966ddbfc3, type: 3}
+  - {fileID: 12800000, guid: 82e72e0bbf4884478b142d8a1da58f88, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

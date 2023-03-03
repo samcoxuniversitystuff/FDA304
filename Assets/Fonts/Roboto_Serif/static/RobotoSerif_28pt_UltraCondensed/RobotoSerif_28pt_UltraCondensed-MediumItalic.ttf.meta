@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b00bd3e5bc4964fa38855df2431a2fb5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif 28pt UltraCondensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 00f5560fe2e284d3cbee37583eb4fb2a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

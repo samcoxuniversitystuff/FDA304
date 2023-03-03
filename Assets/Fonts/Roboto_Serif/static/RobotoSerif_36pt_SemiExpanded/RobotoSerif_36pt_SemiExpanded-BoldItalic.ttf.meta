@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: e73bb4f98d7404e7d82f4aa1b0cb07f7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif 36pt SemiExpanded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f21f610c1eb1444e98fb9f57c3e9c938, type: 3}
+  - {fileID: 12800000, guid: 64947a6d3e78e474d8a12380200b9fec, type: 3}
+  - {fileID: 12800000, guid: 71af2e97178d047099cac995faaade64, type: 3}
+  - {fileID: 12800000, guid: 576ff5617268e4d5c8863825bc6dad1c, type: 3}
+  - {fileID: 12800000, guid: f5c0c6a4e0e4c4b0a8bd6a1383d94f5b, type: 3}
+  - {fileID: 12800000, guid: a4679138259974ae68d08a2e2915e9f3, type: 3}
+  - {fileID: 12800000, guid: 27294bb6a471943cc800ac462be7fafe, type: 3}
+  - {fileID: 12800000, guid: c0b9fe600a6284ac8a7c60f44b5de4a3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

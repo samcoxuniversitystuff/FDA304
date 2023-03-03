@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 55b712d4047aa486e99b6fba9de99139
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif 120pt UltraCondensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e3f893497408f48058b01c94bafb2576, type: 3}
+  - {fileID: 12800000, guid: c1eb23e688e124ee7a41acf624a096cb, type: 3}
+  - {fileID: 12800000, guid: 1403428e501cf4828b78f7dfa21bcbe7, type: 3}
+  - {fileID: 12800000, guid: a30372d1e53d849ae9d3d67e657564da, type: 3}
+  - {fileID: 12800000, guid: 8035f7acd9a9b41ba9b836a1d24d421c, type: 3}
+  - {fileID: 12800000, guid: 93f67c69e69c449a3906bbb0f57c0d3b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

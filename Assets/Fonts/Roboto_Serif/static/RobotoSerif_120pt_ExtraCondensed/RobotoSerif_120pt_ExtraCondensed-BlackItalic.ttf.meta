@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9019a8f2f97844d7b8a47885e04b3840
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif 120pt ExtraCondensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 101614a47790f48a797cb4858ab74784, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 061eaefa841414581999cd4fb2bd26f3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif 72pt ExtraExpanded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c05e1b5e882c045349a60b6eddded9a3, type: 3}
+  - {fileID: 12800000, guid: f1eb7a9aa714d4730a8b866861407f2b, type: 3}
+  - {fileID: 12800000, guid: 2493bf809cb214d95948f866e99c4b11, type: 3}
+  - {fileID: 12800000, guid: 81136925dc7824aa489828794eca232d, type: 3}
+  - {fileID: 12800000, guid: c2568020d3eee427e9ab44ba01bf9cd3, type: 3}
+  - {fileID: 12800000, guid: 92f12d9d002ed4d73aa626777b3ac5b8, type: 3}
+  - {fileID: 12800000, guid: 3090bb936531c4b8dbbe6be9d2f9dd7d, type: 3}
+  - {fileID: 12800000, guid: e09cf66b2d23d4d538139889ca46889e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b018f8ab7592843439e9bb3aa422618c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roboto Serif 120pt
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 60eec4a79c1d9484191491d984d9a50e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

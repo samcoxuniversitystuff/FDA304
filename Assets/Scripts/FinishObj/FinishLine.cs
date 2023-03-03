@@ -22,7 +22,11 @@ public class FinishLine : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(OpenNextLevel());
+            p1Objectives p1Obj = col.gameObject.GetComponent<p1Objectives>();
+            if (p1Obj.GetCanProceed())
+            {
+                StartCoroutine(OpenNextLevel());
+            }
         }
     }
 

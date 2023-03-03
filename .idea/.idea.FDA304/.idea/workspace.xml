@@ -3,17 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Lives.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Lives.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Kenney/isometriccity/Tiles/cityPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Kenney/isometriccity/Tiles/cityPalette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Kenney/particlePack_1.1/Unity samples/particlePack_samples.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sam's Tiles/Building Tile 2.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sam's Tiles/Building Tile 2.xcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishObj/FinishLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishObj/FinishLine.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cinemachine/C1Cinemachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Water/WaterTiles.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,15 +33,15 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Sam\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Sam\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Sam\\AppData\\Local\\Symbols\\src"
+      "/Users/samcox/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/Users/samcox/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/Users/samcox/.local/share/Symbols/src"
     ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -49,7 +49,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -95,6 +95,7 @@
       <workItem from="1677365176352" duration="14712000" />
       <workItem from="1677437106691" duration="1624000" />
       <workItem from="1677828405587" duration="4024000" />
+      <workItem from="1677850454468" duration="1011000" />
     </task>
     <servers />
   </component>
