@@ -24,7 +24,11 @@ public class p1Lives : MonoBehaviour
     void KillPlayer()
     {
         CinemachineBrain _cinemachineBrain = FindObjectOfType<CinemachineBrain>();
+        CinemachineVirtualCamera _cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
         Destroy(_cinemachineBrain);
+        Destroy(_cinemachineVirtualCamera.gameObject);
+        p1Timer p1Timer = GetComponent<p1Timer>();
+        p1Timer.SetTimer(0);
         Destroy(this.gameObject);
     }
 
