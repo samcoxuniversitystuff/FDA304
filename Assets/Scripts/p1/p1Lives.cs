@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class p1Lives : MonoBehaviour
@@ -22,6 +23,8 @@ public class p1Lives : MonoBehaviour
 
     void KillPlayer()
     {
+        CinemachineBrain _cinemachineBrain = FindObjectOfType<CinemachineBrain>();
+        Destroy(_cinemachineBrain);
         Destroy(this.gameObject);
     }
 
