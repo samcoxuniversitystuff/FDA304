@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Water/WaterTiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Water/WaterTiles.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
       <workItem from="1677317685139" duration="5904000" />
       <workItem from="1677365176352" duration="14712000" />
       <workItem from="1677437106691" duration="1624000" />
-      <workItem from="1677828405587" duration="707000" />
+      <workItem from="1677828405587" duration="794000" />
     </task>
     <servers />
   </component>
