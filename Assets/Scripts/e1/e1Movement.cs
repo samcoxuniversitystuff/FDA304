@@ -32,20 +32,13 @@ public class e1Movement : MonoBehaviour
 
     private void spotPlayer()
     {
-        float playerDistance = Vector2.Distance(transform.position, _p1Movement.transform.position);
+        // float playerDistance = Vector2.Distance(transform.position, _p1Movement.transform.position);
         // Debug.Log(playerDistance);
         // Occurs if the player's calculated distance is greater than the allotted distance.
-        if (playerDistance > maxDistance)
-        {
+
             // _rigidbody2D.velocity = ((_p1Movement.transform.position - transform.position).normalized) * enemySpeed * Time.fixedDeltaTime;
             _rigidbody2D.MovePosition(Vector2.MoveTowards(transform.position, _p1Movement.transform.position, enemySpeed * Time.deltaTime));
             StopCoroutine(ShootPlayer());
-        }
-        else if (playerDistance < maxDistance)
-        {
-            _rigidbody2D.velocity = new Vector2(0, 0);
-            StartCoroutine(ShootPlayer());
-        }
     }
 
     IEnumerator ShootPlayer()
