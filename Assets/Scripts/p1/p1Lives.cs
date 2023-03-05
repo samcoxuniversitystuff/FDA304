@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class p1Lives : MonoBehaviour
@@ -22,6 +23,14 @@ public class p1Lives : MonoBehaviour
 
     void KillPlayer()
     {
+        p1Timer timer = GetComponent<p1Timer>();
+        timer.SetTimer(0);
+        
+        CinemachineBrain cinemachineBrain = FindObjectOfType<CinemachineBrain>();
+        CinemachineVirtualCamera cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
+
+        Destroy(cinemachineBrain);
+        Destroy(cinemachineVirtualCamera.gameObject);
         Destroy(this.gameObject);
     }
 

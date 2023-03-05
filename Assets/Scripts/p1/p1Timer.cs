@@ -27,4 +27,9 @@ public class p1Timer : MonoBehaviour
     {
         return timer;
     }
+
+    public void SetTimer(int timerToSet)
+    {
+        timer = timerToSet;
+    }
 }

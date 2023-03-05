@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,7 +22,10 @@ public class e1Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        spotPlayer();
+        if (_p1Movement != null)
+        {
+            spotPlayer();
+        }
     }
 
     private void spotPlayer()
