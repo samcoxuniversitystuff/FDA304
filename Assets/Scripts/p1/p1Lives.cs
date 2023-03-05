@@ -15,7 +15,7 @@ public class p1Lives : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lives <= 0)
+        if (lives == 0)
         {
             KillPlayer();
         }
@@ -23,6 +23,9 @@ public class p1Lives : MonoBehaviour
 
     void KillPlayer()
     {
+        GameManager GM = FindObjectOfType<GameManager>();
+        GM.StartCoroutine(GM.ResetGame());
+        
         p1Timer timer = GetComponent<p1Timer>();
         timer.SetTimer(0);
         

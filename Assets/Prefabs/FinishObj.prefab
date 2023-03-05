@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4010550612529314499}
   - component: {fileID: 1655796883103581838}
   - component: {fileID: 8682814334505791116}
+  - component: {fileID: 3394174170528163882}
   m_Layer: 0
   m_Name: FinishObj
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 853351085
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: b572e15b493d5064687a764416dfb9d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3394174170528163882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821761765202006350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d50c830c904164eacb3d93b93a0891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

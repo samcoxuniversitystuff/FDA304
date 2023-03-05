@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - Enemy
   - Walls
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 3225430827
     locked: 0
   - name: Ground
     uniqueID: 4161764349

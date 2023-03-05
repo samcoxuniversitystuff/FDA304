@@ -25,5 +25,10 @@ public class p1Hit : MonoBehaviour
             Destroy(col.gameObject);
             _p1Lives.DeductLives(1);
         }
+        
+        else if (col.gameObject.CompareTag("Water"))
+        {
+            _p1Lives.SetLives(0);
+        }
     }
 }

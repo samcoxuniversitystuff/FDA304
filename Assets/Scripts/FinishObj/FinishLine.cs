@@ -22,7 +22,7 @@ public class FinishLine : MonoBehaviour
 
     }
 
-    void OnCollision2d (Collision2D col)
+    void OnCollisionEnter2D (Collision2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {

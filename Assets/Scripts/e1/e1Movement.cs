@@ -9,14 +9,16 @@ public class e1Movement : MonoBehaviour
 
     [SerializeField] float maxDistance = 5f;
     [SerializeField] private float enemySpeed = 1f;
-    private Vector2 startingPos;
+    private Vector2 _startingPos;
     private p1Movement _p1Movement;
+
+    private bool _canShootPlayer;
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _p1Movement = FindObjectOfType<p1Movement>();
-        startingPos = transform.position;
+        _startingPos = transform.position;
     }
 
     // Update is called once per frame
@@ -37,11 +39,18 @@ public class e1Movement : MonoBehaviour
         {
             // _rigidbody2D.velocity = ((_p1Movement.transform.position - transform.position).normalized) * enemySpeed * Time.fixedDeltaTime;
             _rigidbody2D.MovePosition(Vector2.MoveTowards(transform.position, _p1Movement.transform.position, enemySpeed * Time.deltaTime));
+            StopCoroutine(ShootPlayer());
         }
         else if (playerDistance < maxDistance)
         {
             _rigidbody2D.velocity = new Vector2(0, 0);
+            StartCoroutine(ShootPlayer());
         }
+    }
+
+    IEnumerator ShootPlayer()
+    {
+        yield return new WaitForSeconds(1);
     }
 
     void Update()
