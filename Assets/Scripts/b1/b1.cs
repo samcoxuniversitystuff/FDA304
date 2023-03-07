@@ -31,7 +31,7 @@ public class b1 : MonoBehaviour
             playerScore.AddScore(1);
             
             // Create cool explosion effects.
-            Instantiate(explosion, transform.position, quaternion.identity);
+            // Instantiate(explosion, transform.position, quaternion.identity);
             AudioSource.PlayClipAtPoint(explosionPoint, transform.position, 1);
             
             // Destroy enemy and bullet. 
