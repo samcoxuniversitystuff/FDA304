@@ -337,7 +337,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 853351085
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1339589652, guid: 52f7645c01fe5b046819efb4f26f56f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
   playerAnimator: {fileID: 6683729888029912278}
-  movementSpeed: 2
+  movementSpeed: 1.5
   movementDirection: {x: 0, y: 0}
   gameCam: {fileID: 4148157001685936006, guid: 2a81ae1239ac2f8419c365edc1ba8e3d, type: 3}
 --- !u!50 &1091919206
