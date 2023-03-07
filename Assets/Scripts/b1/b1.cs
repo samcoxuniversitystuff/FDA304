@@ -26,6 +26,8 @@ public class b1 : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Enemy"))
         {
+            p1Score playerScore = FindObjectOfType<p1Score>();
+            playerScore.AddScore(1);
             Instantiate(explosion, transform.position, quaternion.identity);
             AudioSource.PlayClipAtPoint(explosionPoint, transform.position, 1);
             Destroy(col.gameObject);
