@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
     [SerializeField] TMP_Text Pause_Txt;
     [SerializeField] GameObject PauseButton;
     [SerializeField] GameObject QuitButton;
+    [SerializeField] GameObject PauseObj;
 
     public static bool isPaused = false;
     // Start is called before the first frame update
     void Start()
     {
-        SetButtons(false);
+        PauseObj.SetActive(false);
     }
 
     // Update is called once per frame
@@ -32,35 +34,34 @@ public class PauseGame : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q) && isPaused)
         {
-            Application.Quit();
+            Quit();
         }
 
     }
 
-    void Resume()
+    public void Resume()
     {
-
+        PauseObj.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 
     void Pause()
     {
-
+        PauseObj.SetActive(true);
+        Time.timeScale = 0f;
+        isPaused = true;
     }
 
-    public void SetButtons(bool condition)
+    public void Reset()
     {
-        Pause_Txt.enabled = condition;
-        PauseButton.SetActive(condition);
-        QuitButton.SetActive(condition);
+        Resume();
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene);
     }
 
-    public void HUDGamePaused()
+    public void Quit()
     {
-        Pause_Txt.enabled = true;
-    }
-
-    public void HUDGameNotPaused()
-    {
-        Pause_Txt.enabled = false;
+        Application.Quit();
     }
 }
