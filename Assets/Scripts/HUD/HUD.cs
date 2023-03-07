@@ -8,7 +8,7 @@ public class HUD : MonoBehaviour
     [SerializeField] TMP_Text Score_Txt;
     [SerializeField] TMP_Text Lives_Txt;
     [SerializeField] TMP_Text Timer_Txt;
-    [SerializeField] TMP_Text Pause_Txt;
+
 
     p1Timer _p1Timer;
     p1Lives _p1Lives;
@@ -20,7 +20,7 @@ public class HUD : MonoBehaviour
         _p1Timer = FindObjectOfType<p1Timer>();
         _p1Lives = FindObjectOfType<p1Lives>();
         _p1Score = FindObjectOfType<p1Score>();
-        Pause_Txt.enabled = false;
+
     }
 
     // Update is called once per frame
@@ -41,13 +41,5 @@ public class HUD : MonoBehaviour
     }
 
 
-    public void HUDGamePaused()
-    {
-        Pause_Txt.enabled = true;
-    }
 
-    public void HUDGameNotPaused()
-    {
-        Pause_Txt.enabled = false;
-    }
 }

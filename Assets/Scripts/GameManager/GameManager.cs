@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 public class GameManager : MonoBehaviour
 {
     [FormerlySerializedAs("ResetTime")] [SerializeField] private float resetTime = 3;
+    bool isPaused = false;
     // Start is called before the first frame update
     void Start()
     {
