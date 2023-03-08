@@ -386,7 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
   playerAnimator: {fileID: 6683729888029912278}
-  movementSpeed: 1.5
+  movementSpeed: 1
   movementDirection: {x: 0, y: 0}
   gameCam: {fileID: 4148157001685936006, guid: 2a81ae1239ac2f8419c365edc1ba8e3d, type: 3}
 --- !u!50 &1091919206
@@ -521,6 +521,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c9e09892d19054b98cecbaefa0f55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staminaAmount: 100
+  slowdownEnabled: 0
 --- !u!1 &6997305718449267731
 GameObject:
   m_ObjectHideFlags: 0
