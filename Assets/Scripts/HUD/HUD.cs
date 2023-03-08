@@ -2,24 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    [SerializeField] TMP_Text Score_Txt;
-    [SerializeField] TMP_Text Lives_Txt;
-    [SerializeField] TMP_Text Timer_Txt;
+    [FormerlySerializedAs("Score_Txt")] [SerializeField] TMP_Text scoreTxt;
+    [FormerlySerializedAs("Lives_Txt")] [SerializeField] TMP_Text livesTxt;
+    [FormerlySerializedAs("Timer_Txt")] [SerializeField] TMP_Text timerTxt;
+    [FormerlySerializedAs("Stamina_Bar")] [SerializeField] private Scrollbar staminaBar;
 
 
-    p1Timer _p1Timer;
-    p1Lives _p1Lives;
-    p1Score _p1Score;
-
+    private p1Timer _p1Timer;
+    private p1Lives _p1Lives;
+    private p1Score _p1Score;
+    private p1Stamina _p1Stamina;
+    
     // Start is called before the first frame update
     void Start()
     {
         _p1Timer = FindObjectOfType<p1Timer>();
         _p1Lives = FindObjectOfType<p1Lives>();
         _p1Score = FindObjectOfType<p1Score>();
+        _p1Stamina = FindObjectOfType<p1Stamina>();
 
     }
 
@@ -35,9 +40,9 @@ public class HUD : MonoBehaviour
         string scoreTxt = _p1Score.GetScore().ToString();
         string livesTxt = _p1Lives.GetLives().ToString();
 
-        Timer_Txt.text = "timer = " + timerTxt;
-        Score_Txt.text = "score = " + scoreTxt;
-        Lives_Txt.text = "lives = " + livesTxt;
+        this.timerTxt.text = "timer = " + timerTxt;
+        this.scoreTxt.text = "score = " + scoreTxt;
+        this.livesTxt.text = "lives = " + livesTxt;
     }
 
 
