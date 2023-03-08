@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemy;
+    [SerializeField] private int eSpawnerHealth = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -23,4 +24,10 @@ public class enemySpawner : MonoBehaviour
     {
 
     }
+
+    void CheckHealthLevel()
+    {
+ 
+    }
+    
 }
