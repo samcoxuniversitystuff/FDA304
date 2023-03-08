@@ -36,8 +36,18 @@ public class enemySpawner : MonoBehaviour
 
     void CheckHealthLevel()
     {
-        float healthColor = (eSpawnerHealth / 100);
-        _spriteRenderer.color = new Color(healthColor, 1f, 1f, 1f);
+        if (eSpawnerHealth > 75)
+        {
+            _spriteRenderer.color = Color.white;
+        }
+        else if (eSpawnerHealth > 50)
+        {
+            _spriteRenderer.color = Color.black;
+        }
+        else if (eSpawnerHealth > 25)
+        {
+            _spriteRenderer.color = Color.blue;
+        }
     }
 
     public void ReduceHealth(int healthToReduce)
