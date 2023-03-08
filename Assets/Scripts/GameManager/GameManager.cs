@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator ResetGame()
     {
-        Time.timeScale = 0f;
         yield return new WaitForSeconds(resetTime);
         Time.timeScale = 1f;
         int currentScene = SceneManager.GetActiveScene().buildIndex;

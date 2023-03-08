@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
       <workItem from="1678031401867" duration="1300000" />
       <workItem from="1678225404809" duration="685000" />
       <workItem from="1678258597034" duration="3849000" />
-      <workItem from="1678287985816" duration="222000" />
+      <workItem from="1678287985816" duration="514000" />
     </task>
     <servers />
   </component>
