@@ -24,6 +24,13 @@ public class b1 : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("Bullet destroyed.");
         }
+        
+        else if (col.gameObject.CompareTag("eSpawner"))
+        {
+            enemySpawner spawner = col.gameObject.GetComponent<enemySpawner>();
+            spawner.ReduceHealth(25);
+            Destroy(this.gameObject);
+        }
         else if (col.gameObject.CompareTag("Enemy"))
         {
             // Add player score.

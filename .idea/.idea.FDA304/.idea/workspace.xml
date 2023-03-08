@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="" />
+    <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/eSpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/eSpawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tilemap_Mockups/medieval_mockup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +98,7 @@
       <workItem from="1677437106691" duration="1624000" />
       <workItem from="1678031401867" duration="1300000" />
       <workItem from="1678225404809" duration="685000" />
+      <workItem from="1678258597034" duration="1383000" />
     </task>
     <servers />
   </component>
