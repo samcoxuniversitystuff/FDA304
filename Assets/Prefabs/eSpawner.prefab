@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5873258387574524071, guid: 32e4a8737bb6d4cc6b8b2b105659cffb, type: 3}
+  amountOfEnemies: 5
   eSpawnerHealth: 100
 --- !u!212 &8634941660025154316
 SpriteRenderer:

@@ -6,7 +6,7 @@ using UnityEngine;
 public class enemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemy;
-    [SerializeField] private int amountOfEnemies = 5;
+    [SerializeField] private int amountOfEnemies = 11;
     
     private SpriteRenderer _spriteRenderer;
     
@@ -21,7 +21,6 @@ public class enemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckHealthLevel();
     }
 
 
@@ -37,12 +36,14 @@ public class enemySpawner : MonoBehaviour
 
     void CheckHealthLevel()
     {
-        _spriteRenderer.color = new Color(1f, 1f, 1f, eSpawnerHealth);
+        float healthColor = (eSpawnerHealth / 100);
+        _spriteRenderer.color = new Color(healthColor, 1f, 1f, 1f);
     }
 
     public void ReduceHealth(int healthToReduce)
     {
         eSpawnerHealth -= healthToReduce;
+        CheckHealthLevel();
         if (eSpawnerHealth <= 0)
         {
             SpawnNewEnemies();

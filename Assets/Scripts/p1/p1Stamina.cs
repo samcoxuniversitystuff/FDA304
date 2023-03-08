@@ -22,5 +22,10 @@ public class p1Stamina : MonoBehaviour
             staminaAmount += 5 * Time.deltaTime;
         }
     }
+
+    public float GetStamina()
+    {
+        return staminaAmount;
+    }
     
 }
