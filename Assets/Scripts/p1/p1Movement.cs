@@ -9,6 +9,10 @@ public class p1Movement : MonoBehaviour
 
     [FormerlySerializedAs("a")] [FormerlySerializedAs("_a")] [SerializeField] Animator playerAnimator;
     [SerializeField] float movementSpeed = 3f;
+    [SerializeField] private float speedMultiplier = 2f;
+    [SerializeField] private float rushSpeed;
+
+    [SerializeField] private float originalSpeed;
     [SerializeField] Vector2 movementDirection;
 
     public Camera gameCam;
@@ -18,6 +22,8 @@ public class p1Movement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        originalSpeed = movementSpeed;
+        rushSpeed = movementSpeed * speedMultiplier;
     }
 
     // Update is called once per frame
@@ -25,6 +31,7 @@ public class p1Movement : MonoBehaviour
     {
         UpdateMovementDirection();
         UpdateAnimation();
+        ChoosePlayerSpeed();
         /*
         _mousePosition = gameCam.ScreenToWorldPoint(Input.mousePosition);
         */
@@ -40,6 +47,18 @@ public class p1Movement : MonoBehaviour
         float cAngle = Mathf.Atan2(viewingDirection.y, viewingDirection.x) * Mathf.Rad2Deg - 90f;
         rb2d.rotation = cAngle;
         */
+    }
+
+    void ChoosePlayerSpeed()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            movementSpeed = rushSpeed;
+        }
+        else
+        {
+            movementSpeed = originalSpeed;
+        }
     }
 
 
