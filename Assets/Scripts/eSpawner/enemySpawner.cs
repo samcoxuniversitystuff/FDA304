@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class enemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemy;
     [SerializeField] private int amountOfEnemies = 11;
+    [SerializeField] private float maxDistance = 0.58f;
     
     private SpriteRenderer _spriteRenderer;
     
@@ -28,7 +30,7 @@ public class enemySpawner : MonoBehaviour
     {
         for (int i = 0; i < amountOfEnemies; i++)
         {
-            Vector3 newEnemyPos = new Vector3(transform.position.x + i, transform.position.y + 1, transform.position.z);
+            Vector3 newEnemyPos = new Vector3(transform.position.x, transform.position.y + Random.Range(-maxDistance, maxDistance), transform.position.z);
             Instantiate(enemy, newEnemyPos, quaternion.identity);
         } 
         Destroy(this.gameObject);
