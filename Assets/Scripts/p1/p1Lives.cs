@@ -26,8 +26,8 @@ public class p1Lives : MonoBehaviour
         GameManager GM = FindObjectOfType<GameManager>();
         GM.StartCoroutine(GM.ResetGame());
         
-        p1Timer timer = GetComponent<p1Timer>();
-        timer.SetTimer(0);
+        // p1Timer timer = GetComponent<p1Timer>();
+        // timer.SetTimer(0);
         
         CinemachineBrain cinemachineBrain = FindObjectOfType<CinemachineBrain>();
         CinemachineVirtualCamera cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();

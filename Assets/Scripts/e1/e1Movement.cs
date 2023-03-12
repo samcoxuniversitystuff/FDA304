@@ -13,6 +13,9 @@ public class e1Movement : MonoBehaviour
     private p1Movement _p1Movement;
 
     private bool _canShootPlayer;
+    
+    private Vector2 _enemyMovement;
+    [SerializeField] private Animator enemyAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,23 +35,33 @@ public class e1Movement : MonoBehaviour
 
     private void spotPlayer()
     {
-        // float playerDistance = Vector2.Distance(transform.position, _p1Movement.transform.position);
-        // Debug.Log(playerDistance);
-        // Occurs if the player's calculated distance is greater than the allotted distance.
-
-            // _rigidbody2D.velocity = ((_p1Movement.transform.position - transform.position).normalized) * enemySpeed * Time.fixedDeltaTime;
-            _rigidbody2D.MovePosition(Vector2.MoveTowards(transform.position, _p1Movement.transform.position, enemySpeed * Time.deltaTime));
-            StopCoroutine(ShootPlayer());
+        float playerDistance = Vector2.Distance(transform.position, _p1Movement.transform.position);
+        if (playerDistance <= maxDistance)
+        {
+            MoveToPlayer();
+        }
     }
 
-    IEnumerator ShootPlayer()
+    void MoveToPlayer()
     {
-        yield return new WaitForSeconds(1);
+        
     }
 
     void Update()
     {
+        UpdateEnemyMovement();
+        UpdateEnemyAnimation();
+    }
 
+    void UpdateEnemyMovement()
+    {
+        _enemyMovement = _rigidbody2D.velocity;
+        Debug.Log("Enemy velocity:" + _enemyMovement);
+    }
+
+    void UpdateEnemyAnimation()
+    {
+        
     }
 }
 
