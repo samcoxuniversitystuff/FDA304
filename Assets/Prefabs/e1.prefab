@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 5
   enemySpeed: 0.5
+  enemyAnimator: {fileID: 7916431692727271387}
 --- !u!95 &7916431692727271387
 Animator:
   serializedVersion: 4

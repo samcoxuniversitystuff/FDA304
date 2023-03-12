@@ -45,7 +45,7 @@ public class HUD : MonoBehaviour
         this.livesTxt.text = "lives = " + livesTxt;
         float hudStamina = (_p1Stamina.GetStamina() / 100);
         staminaBar.value = hudStamina;
-        print("hudStamina: " + hudStamina);
+        // print("hudStamina: " + hudStamina);
     }
 
 

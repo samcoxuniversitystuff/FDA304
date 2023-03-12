@@ -32,21 +32,12 @@ public class p1Movement : MonoBehaviour
         UpdateMovementDirection();
         UpdateAnimation();
         ChoosePlayerSpeed();
-        /*
-        _mousePosition = gameCam.ScreenToWorldPoint(Input.mousePosition);
-        */
-
 
     }
     
     void FixedUpdate()
     {
         MovePlayer();
-        /*
-        Vector2 viewingDirection = _mousePosition - rb2d.position;
-        float cAngle = Mathf.Atan2(viewingDirection.y, viewingDirection.x) * Mathf.Rad2Deg - 90f;
-        rb2d.rotation = cAngle;
-        */
     }
 
     void ChoosePlayerSpeed()
@@ -80,29 +71,6 @@ public class p1Movement : MonoBehaviour
     void MovePlayer()
     {
         rb2d.MovePosition(rb2d.position + movementDirection * (movementSpeed * Time.fixedDeltaTime));
-    }
-
-
-
-    void MovePlayerOld()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            rb2d.velocity = new Vector2(0, movementSpeed);
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            rb2d.velocity = new Vector2(0, -movementSpeed);
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            rb2d.velocity = new Vector2(-movementSpeed, 0);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            rb2d.velocity = new Vector2(movementSpeed, 0);
-        }
-
     }
 
     public Vector2 GetPlayerDirection()
