@@ -38,23 +38,22 @@ public class e1Movement : MonoBehaviour
             enemySpeed * Time.deltaTime);
         Debug.Log("Movement Direction: " + _movementDirection);
         transform.position = _movementDirection;
-        UpdateAnimation();
+
     }
     
     void UpdateAnimation()
     {
-        _animationDirection.x = Mathf.Clamp(_movementDirection.x, -1, 1);
-        _animationDirection.y = Mathf.Clamp(_movementDirection.y, -1, 1);
+        _animationDirection = _p1Movement.GetPlayerDirection();
         Debug.Log("Animation Direction: " + _animationDirection);
-        enemyAnimator.SetFloat("Horizontal", _movementDirection.x);
-        enemyAnimator.SetFloat("Vertical", _movementDirection.y);
-        enemyAnimator.SetFloat("Speed", _movementDirection.sqrMagnitude);
+        enemyAnimator.SetFloat("Horizontal", _animationDirection.x);
+        enemyAnimator.SetFloat("Vertical", _animationDirection.y);
+        enemyAnimator.SetFloat("Speed", _animationDirection.sqrMagnitude);
     }
 
 
     void Update()
     {
-
+        UpdateAnimation();
     }
 }
 
