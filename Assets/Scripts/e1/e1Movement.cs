@@ -25,6 +25,11 @@ public class e1Movement : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        UpdateAnimation();
+    }
+
     void FixedUpdate()
     {
         MoveToPlayer();
@@ -51,10 +56,7 @@ public class e1Movement : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        UpdateAnimation();
-    }
+
 }
 
 // Resources:
