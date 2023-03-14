@@ -9,14 +9,16 @@ public class enemySpawner : MonoBehaviour
     [SerializeField] GameObject enemy;
     [SerializeField] private int amountOfEnemies = 11;
     [SerializeField] private float maxDistance = 0.58f;
-    
+
     private SpriteRenderer _spriteRenderer;
-    
+
     [SerializeField] private int eSpawnerHealth = 100;
 
     [SerializeField] GameObject SpawnPoint1;
     [SerializeField] GameObject SpawnPoint2;
     [SerializeField] GameObject SpawnPoint3;
+
+    [SerializeField] private AudioClip glassSound;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class enemySpawner : MonoBehaviour
 
     public void SpawnNewEnemies()
     {
-
+        AudioSource.PlayClipAtPoint(glassSound, transform.position);
         Vector3 newEnemyPos = new Vector3(transform.position.x, transform.position.y + Random.Range(-maxDistance, maxDistance), transform.position.z);
         SpawnEnemiesInSpawnPoint(SpawnPoint1);
         SpawnEnemiesInSpawnPoint(SpawnPoint2);

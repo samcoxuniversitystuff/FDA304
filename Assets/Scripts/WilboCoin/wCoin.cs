@@ -5,6 +5,8 @@ using UnityEngine;
 public class wCoin : MonoBehaviour
 {
     [SerializeField] int scoreToAdd = 1;
+
+    [SerializeField] private AudioClip moneySound; 
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class wCoin : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(moneySound, transform.position);
             p1Score playerScore = FindObjectOfType<p1Score>();
             playerScore.AddScore(scoreToAdd);
             Destroy(this.gameObject);

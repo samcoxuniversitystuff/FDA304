@@ -257,6 +257,7 @@ MonoBehaviour:
   SpawnPoint1: {fileID: 6744597262417147315}
   SpawnPoint2: {fileID: 2888811721123170898}
   SpawnPoint3: {fileID: 8339563322513915515}
+  glassSound: {fileID: 8300000, guid: c8b992f89bec7944eb1c05a29b9e80f0, type: 3}
 --- !u!212 &8634941660025154316
 SpriteRenderer:
   m_ObjectHideFlags: 0

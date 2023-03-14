@@ -387,6 +387,9 @@ MonoBehaviour:
   rb2d: {fileID: 0}
   playerAnimator: {fileID: 6683729888029912278}
   movementSpeed: 1
+  speedMultiplier: 2
+  rushSpeed: 0
+  originalSpeed: 0
   movementDirection: {x: 0, y: 0}
   gameCam: {fileID: 4148157001685936006, guid: 2a81ae1239ac2f8419c365edc1ba8e3d, type: 3}
 --- !u!50 &1091919206
@@ -471,6 +474,7 @@ MonoBehaviour:
   pDownLeft: {fileID: 8518304873083358241}
   pDownRight: {fileID: 6039796883503585906}
   isShooting: 1
+  bulletSound: {fileID: 8300000, guid: 1303f1c2b5a63754f92198f790b4b736, type: 3}
 --- !u!114 &1118480816
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,7 +24,9 @@ public class p1Shooting : MonoBehaviour
     [SerializeField] private Transform pDownLeft;
     [SerializeField] private Transform pDownRight;
 
-    public bool isShooting = true; 
+    public bool isShooting = true;
+
+    [SerializeField] private AudioClip bulletSound;
     
     private void Start()
     {
@@ -102,6 +104,7 @@ public class p1Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            AudioSource.PlayClipAtPoint(bulletSound, transform.position);
             GameObject _bulletOBJ = Instantiate(bullet, GetShootingPosition(), quaternion.identity) as GameObject;
             Rigidbody2D _bulletRB = _bulletOBJ.GetComponent<Rigidbody2D>();
             b1 b1Script = _bulletOBJ.GetComponent<b1>();

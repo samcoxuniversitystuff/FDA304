@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -66,6 +67,8 @@ public class p1Movement : MonoBehaviour
     {
         movementDirection.x = Input.GetAxisRaw("Horizontal");
         movementDirection.y = Input.GetAxisRaw("Vertical");
+        movementDirection = movementDirection.normalized;
+
     }
 
     void MovePlayer()
