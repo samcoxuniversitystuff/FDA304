@@ -14,6 +14,10 @@ public class enemySpawner : MonoBehaviour
     
     [SerializeField] private int eSpawnerHealth = 100;
 
+    [SerializeField] GameObject SpawnPoint1;
+    [SerializeField] GameObject SpawnPoint2;
+    [SerializeField] GameObject SpawnPoint3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,12 +32,17 @@ public class enemySpawner : MonoBehaviour
 
     public void SpawnNewEnemies()
     {
-        for (int i = 0; i < amountOfEnemies; i++)
-        {
-            Vector3 newEnemyPos = new Vector3(transform.position.x, transform.position.y + Random.Range(-maxDistance, maxDistance), transform.position.z);
-            Instantiate(enemy, newEnemyPos, quaternion.identity);
-        } 
+
+        Vector3 newEnemyPos = new Vector3(transform.position.x, transform.position.y + Random.Range(-maxDistance, maxDistance), transform.position.z);
+        SpawnEnemiesInSpawnPoint(SpawnPoint1);
+        SpawnEnemiesInSpawnPoint(SpawnPoint2);
+        SpawnEnemiesInSpawnPoint(SpawnPoint3);
         Destroy(this.gameObject);
+    }
+
+    void SpawnEnemiesInSpawnPoint(GameObject SpawnPoint)
+    {
+        Instantiate(enemy, SpawnPoint.transform.position, quaternion.identity);
     }
 
     void CheckHealthLevel()
