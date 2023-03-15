@@ -8,6 +8,8 @@ public class GameGates : MonoBehaviour
     [SerializeField] private GameObject gateBottom;
 
     [SerializeField] private string gateKey;
+
+    [SerializeField] private float gateMoveAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,13 @@ public class GameGates : MonoBehaviour
             if (playerKey.GetPlayerKey() == gateKey && playerKey.GetHasKey())
             { 
                 OpenGate();
+                playerKey.SetPlayerKey("");
+                playerKey.SetHasKey(false);
+                Debug.Log("The player's key has been reset.");
+            }
+            else if (playerKey.GetPlayerKey() != gateKey)
+            {
+                Debug.Log("Sorry, but the key doesn't match the gate lock.");
             }
 
         }
@@ -36,5 +45,9 @@ public class GameGates : MonoBehaviour
     void OpenGate()
     {
         Debug.Log("This should open the gate.");
+        gateTop.transform.position += new Vector3(gateTop.transform.position.x, 
+            gateTop.transform.position.y + gateMoveAmount, gateTop.transform.position.z);
+        gateBottom.transform.position += new Vector3(gateBottom.transform.position.x, 
+            gateBottom.transform.position.y - gateMoveAmount, gateBottom.transform.position.z);
     }
 }
