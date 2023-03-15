@@ -27,14 +27,14 @@ public class GameGates : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             p1Key playerKey = col.gameObject.GetComponent<p1Key>();
-            if (playerKey.GetPlayerKey() == gateKey && playerKey.GetHasKey())
+            if (playerKey.GetHasKey() && playerKey.GetPlayerKey() == gateKey)
             { 
                 OpenGate();
                 playerKey.SetPlayerKey("");
                 playerKey.SetHasKey(false);
                 Debug.Log("The player's key has been reset.");
             }
-            else if (playerKey.GetPlayerKey() != gateKey)
+            else if (playerKey.GetHasKey() && playerKey.GetPlayerKey() != gateKey)
             {
                 Debug.Log("Sorry, but the key doesn't match the gate lock.");
             }
@@ -45,9 +45,7 @@ public class GameGates : MonoBehaviour
     void OpenGate()
     {
         Debug.Log("This should open the gate.");
-        gateTop.transform.position += new Vector3(gateTop.transform.position.x, 
-            gateTop.transform.position.y + gateMoveAmount, gateTop.transform.position.z);
-        gateBottom.transform.position += new Vector3(gateBottom.transform.position.x, 
-            gateBottom.transform.position.y - gateMoveAmount, gateBottom.transform.position.z);
+        Destroy(gateTop);
+        Destroy(gateBottom);
     }
 }

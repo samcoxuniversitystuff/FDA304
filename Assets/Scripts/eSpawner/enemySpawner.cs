@@ -55,7 +55,7 @@ public class enemySpawner : MonoBehaviour
         }
         else if (eSpawnerHealth > 50)
         {
-            _spriteRenderer.color = Color.black;
+            _spriteRenderer.color = Color.cyan;
         }
         else if (eSpawnerHealth > 25)
         {
