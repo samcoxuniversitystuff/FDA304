@@ -67,7 +67,7 @@ public class p1Movement : MonoBehaviour
     {
         movementDirection.x = Input.GetAxisRaw("Horizontal");
         movementDirection.y = Input.GetAxisRaw("Vertical");
-        movementDirection = movementDirection.normalized;
+        // movementDirection = movementDirection.normalized;
 
     }
 

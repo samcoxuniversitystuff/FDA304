@@ -9,8 +9,7 @@ public class HUD : MonoBehaviour
 {
     [FormerlySerializedAs("Score_Txt")] [SerializeField] TMP_Text scoreTxt;
     [FormerlySerializedAs("Lives_Txt")] [SerializeField] TMP_Text livesTxt;
-    // [FormerlySerializedAs("Timer_Txt")] [SerializeField] TMP_Text timerTxt;
-    // [FormerlySerializedAs("Stamina_Bar")] [SerializeField] private Scrollbar staminaBar;
+    [SerializeField] private GameObject keySilhouette;
 
 
     // private p1Timer _p1Timer;
@@ -21,10 +20,9 @@ public class HUD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    //    _p1Timer = FindObjectOfType<p1Timer>();
         _p1Lives = FindObjectOfType<p1Lives>();
         _p1Score = FindObjectOfType<p1Score>();
-        // _p1Stamina = FindObjectOfType<p1Stamina>();
+        DisableKeyImage();
 
     }
 
@@ -46,6 +44,16 @@ public class HUD : MonoBehaviour
         // float hudStamina = (_p1Stamina.GetStamina() / 100);
         // staminaBar.value = hudStamina;
         // print("hudStamina: " + hudStamina);
+    }
+
+    public void EnableKeyImage()
+    {
+        keySilhouette.SetActive(true);
+    }
+
+    public void DisableKeyImage()
+    {
+        keySilhouette.SetActive(false);
     }
 
 

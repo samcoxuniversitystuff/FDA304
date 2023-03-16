@@ -28,6 +28,8 @@ public class keyObject : MonoBehaviour
                 _p1Key.SetHasKey(true);
                 _p1Key.SetPlayerKey(keyCode);
                 Debug.Log("The player now has the key " + keyCode);
+                HUD hudScript = FindObjectOfType<HUD>();
+                hudScript.EnableKeyImage();
                 Destroy(this.gameObject);
             }
         }

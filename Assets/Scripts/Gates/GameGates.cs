@@ -32,6 +32,8 @@ public class GameGates : MonoBehaviour
                 OpenGate();
                 playerKey.SetPlayerKey("");
                 playerKey.SetHasKey(false);
+                HUD hudScript = FindObjectOfType<HUD>();
+                hudScript.DisableKeyImage();
                 Debug.Log("The player's key has been reset.");
             }
             else if (playerKey.GetHasKey() && playerKey.GetPlayerKey() != gateKey)
