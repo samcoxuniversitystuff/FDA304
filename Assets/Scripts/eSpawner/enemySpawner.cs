@@ -7,6 +7,11 @@ using Random = UnityEngine.Random;
 public class enemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemy;
+    [SerializeField] private GameObject enemy2;
+
+    [SerializeField] private bool spawnEnemy2;
+
+
     [SerializeField] private int amountOfEnemies = 11;
     [SerializeField] private float maxDistance = 0.58f;
 
@@ -44,7 +49,16 @@ public class enemySpawner : MonoBehaviour
 
     void SpawnEnemiesInSpawnPoint(GameObject SpawnPoint)
     {
-        Instantiate(enemy, SpawnPoint.transform.position, quaternion.identity);
+        if (!spawnEnemy2)
+        {
+            Instantiate(enemy, SpawnPoint.transform.position, quaternion.identity);
+        }
+        else if (spawnEnemy2)
+        {
+            Instantiate(enemy2, SpawnPoint.transform.position, quaternion.identity);
+
+        }
+
     }
 
     void CheckHealthLevel()

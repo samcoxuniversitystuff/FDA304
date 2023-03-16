@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Wilbo/WilboCoin.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Wilbo/WilboCoin.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WilboCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WilboCoin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/eSpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/eSpawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1XL.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1XL.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gates/GameGates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/GameGates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD/HUD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerKey/keyObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerKey/keyObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +110,7 @@
       <workItem from="1678871354869" duration="2271000" />
       <workItem from="1678880525920" duration="2903000" />
       <workItem from="1678951622163" duration="688000" />
+      <workItem from="1678977854834" duration="811000" />
     </task>
     <servers />
   </component>
