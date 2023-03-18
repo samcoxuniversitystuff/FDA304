@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class mainMenuCanvas : MonoBehaviour
 {
+    [SerializeField] private string firstLevelName = "level01";
+
+    [SerializeField] private string instructionsLevelName = "HowToPlay";
+    
+    [SerializeField] private string settingsLevelName = "settings";
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,16 +25,21 @@ public class mainMenuCanvas : MonoBehaviour
 
     public void OpenLvl01()
     {
-        SceneManager.LoadScene("lvl01");
+        SceneManager.LoadScene(firstLevelName);
     }
 
     public void OpenSettings()
     {
-        SceneManager.LoadScene("settings");
+        SceneManager.LoadScene(settingsLevelName);
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OpenInstructions()
+    {
+        SceneManager.LoadScene(instructionsLevelName);
     }
 }

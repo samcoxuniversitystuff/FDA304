@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FinishObj.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FinishObj.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/mainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/mainMenuCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +109,7 @@
       <workItem from="1678880525920" duration="2903000" />
       <workItem from="1678951622163" duration="688000" />
       <workItem from="1678977854834" duration="812000" />
+      <workItem from="1679133580451" duration="815000" />
     </task>
     <servers />
   </component>
