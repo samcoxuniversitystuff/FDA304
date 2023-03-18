@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.InputSystem;
 
 public class p1Movement : MonoBehaviour
 {
@@ -18,6 +20,15 @@ public class p1Movement : MonoBehaviour
 
     public Camera gameCam;
     private Vector2 _mousePosition;
+
+    public PolyDungeons MovementControls;
+
+    private InputAction _move;
+
+    private void Awake()
+    {
+        MovementControls = new PolyDungeons();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +46,18 @@ public class p1Movement : MonoBehaviour
         ChoosePlayerSpeed();
 
     }
-    
+
+    private void OnEnable()
+    {
+        _move = MovementControls.Player.Move;
+        _move.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _move.Disable();
+    }
+
     void FixedUpdate()
     {
         MovePlayer();
@@ -65,9 +87,10 @@ public class p1Movement : MonoBehaviour
 
     void UpdateMovementDirection()
     {
-        movementDirection.x = Input.GetAxisRaw("Horizontal");
-        movementDirection.y = Input.GetAxisRaw("Vertical");
+        //movementDirection.x = Input.GetAxisRaw("Horizontal");
+        // movementDirection.y = Input.GetAxisRaw("Vertical");
         // movementDirection = movementDirection.normalized;
+        movementDirection = _move.ReadValue<Vector2>().normalized;
 
     }
 
@@ -81,3 +104,6 @@ public class p1Movement : MonoBehaviour
         return movementDirection;
     }
 }
+
+// References
+// https://youtu.be/HmXU4dZbaMw

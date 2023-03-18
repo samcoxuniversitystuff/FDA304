@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.InputSystem;
 
 public class p1Shooting : MonoBehaviour
 {
+    private Rigidbody2D _rigidbody2D;
+    
     [SerializeField] private GameObject bullet;
     [SerializeField] private float bulletForceAmount = 10;
 
@@ -27,104 +30,94 @@ public class p1Shooting : MonoBehaviour
     public bool isShooting = true;
 
     [SerializeField] private AudioClip bulletSound;
+
+    public PolyDungeons Controls;
+    private InputAction _fire;
+    private InputAction _switchWeapon;
+    private InputAction _lookDirection;
+
+    public Camera playerCamera;
+    public Vector2 mousePosition;
     
+    private void Awake()
+    {
+        Controls = new PolyDungeons();
+    }
+
     private void Start()
     {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        playerCamera = FindObjectOfType<Camera>();
         _p1Movement = FindObjectOfType<p1Movement>();
     }
 
     private void Update()
     {
-        xDirection = _p1Movement.GetPlayerDirection().x;
-        yDirection = _p1Movement.GetPlayerDirection().y;
-        ChangeWeaponType();
-        if (isShooting)
-        {
-            ShootBullet();
-        }
+        xDirection = _lookDirection.ReadValue<Vector2>().x;
+        yDirection = _lookDirection.ReadValue<Vector2>().y;
 
-    }
+        mousePosition = playerCamera.ScreenToWorldPoint(Input.mousePosition);
 
-    void ChangeWeaponType()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            if (isShooting)
-            {
-                isShooting = false;
-            }
-            else if (!isShooting)
-            {
-                isShooting = true;
-            }
-        }
     }
 
     private void FixedUpdate()
     {
-
+        Vector2 fireDirection = mousePosition - _rigidbody2D.position;
+        float firingAgle = Mathf.Atan2(fireDirection.y, fireDirection.x) * Mathf.Rad2Deg - 90f;
+        Debug.Log("Firing angle: " + firingAgle);
     }
 
-    Vector2 GetShootingPosition()
+    private void OnEnable()
     {
-        switch (xDirection)
+        _lookDirection = Controls.Player.ShootingDirection;
+        
+        _fire = Controls.Player.Fire;
+        _switchWeapon = Controls.Player.SwitchWeapon;
+        
+        _fire.Enable();
+        _switchWeapon.Enable();
+        
+        _fire.performed += Fire;
+        _switchWeapon.performed += SwitchWeapon;
+        
+    }
+
+    private void OnDisable()
+    {
+        _fire.Disable();
+    }
+
+    public void Fire(InputAction.CallbackContext callbackContext)
+    {
+        if (isShooting)
         {
-            case 0 when yDirection == -1: // Start of first 4 coordinates. 
-                return pDown.position;
-            case 0 when yDirection == 1:
-                return pUp.position;
-            case 1 when yDirection == 0:
-                return pRight.position;
-            case -1 when yDirection == 0:
-                return pLeft.position; // End of first 4 coordinates.
-            case -1 when yDirection == 1: // Start of other 4 coordinates. 
-                return pUpLeft.position; 
-            case 1 when yDirection == 1:
-                return pUpRight.position;
-            case -1 when yDirection == -1:
-                return pDownLeft.position;
-            case 1 when yDirection == -1:
-                return pDownRight.position; // End of other 4 coordinates.
-            default:
-                return pDown.position;
+            ShootBullet();
+        }
+        else if (!isShooting)
+        {
+            SwingSword();
         }
     }
 
-    Vector2 GetShootingDirection()
+    public void SwitchWeapon(InputAction.CallbackContext callbackContext)
     {
-        switch (xDirection)
+        if (isShooting)
         {
-            case 0 when yDirection == -1: // Start of first 4 coordinates. 
-                return Vector2.down;
-            case 0 when yDirection == 1:
-                return Vector2.up;
-            case 1 when yDirection == 0:
-                return Vector2.right;
-            case -1 when yDirection == 0:
-                return Vector2.left; // End of first 4 coordinates.
-            case -1 when yDirection == 1: // Start of other 4 coordinates. 
-                return (Vector2.left + Vector2.up);
-            case 1 when yDirection == 1:
-                return (Vector2.right + Vector2.up);
-            case -1 when yDirection == -1:
-                return (Vector2.left + Vector2.down);
-            case 1 when yDirection == -1:
-                return (Vector2.right + Vector2.down); // End of other 4 coordinates.
-            default:
-                return Vector2.down;
+            isShooting = false;
+        }
+        else if (!isShooting)
+        {
+            isShooting = true;
         }
     }
-
     void ShootBullet()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AudioSource.PlayClipAtPoint(bulletSound, transform.position);
-            GameObject _bulletOBJ = Instantiate(bullet, GetShootingPosition(), quaternion.identity) as GameObject;
-            Rigidbody2D _bulletRB = _bulletOBJ.GetComponent<Rigidbody2D>();
-            b1 b1Script = _bulletOBJ.GetComponent<b1>();
-            _bulletRB.velocity = GetShootingDirection() * bulletForceAmount;
-        }
+        AudioSource.PlayClipAtPoint(bulletSound, transform.position);
+    }
+
+    void SwingSword()
+    {
+        
     }
 
     public bool GetShootingMode()
