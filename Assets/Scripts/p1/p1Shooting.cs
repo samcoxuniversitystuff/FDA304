@@ -37,12 +37,27 @@ public class p1Shooting : MonoBehaviour
     {
         xDirection = _p1Movement.GetPlayerDirection().x;
         yDirection = _p1Movement.GetPlayerDirection().y;
-        // Debug.Log("X = " + xDirection + " " + "Y = " + yDirection);
+        ChangeWeaponType();
         if (isShooting)
         {
             ShootBullet();
         }
 
+    }
+
+    void ChangeWeaponType()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (isShooting)
+            {
+                isShooting = false;
+            }
+            else if (!isShooting)
+            {
+                isShooting = true;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -109,6 +124,18 @@ public class p1Shooting : MonoBehaviour
             Rigidbody2D _bulletRB = _bulletOBJ.GetComponent<Rigidbody2D>();
             b1 b1Script = _bulletOBJ.GetComponent<b1>();
             _bulletRB.velocity = GetShootingDirection() * bulletForceAmount;
+        }
+    }
+
+    public bool GetShootingMode()
+    {
+        if (isShooting)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

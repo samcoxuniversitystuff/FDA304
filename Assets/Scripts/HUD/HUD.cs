@@ -11,17 +11,22 @@ public class HUD : MonoBehaviour
     [FormerlySerializedAs("Lives_Txt")] [SerializeField] TMP_Text livesTxt;
     [SerializeField] private GameObject keySilhouette;
 
-
-    // private p1Timer _p1Timer;
+    
     private p1Lives _p1Lives;
     private p1Score _p1Score;
-    // private p1Stamina _p1Stamina;
+    private p1Shooting _p1Shooting;
+
+    [SerializeField] private Image weaponHUD;
+    [SerializeField] private Sprite arrowImg;
+    [SerializeField] private Sprite swordImg;
+
     
     // Start is called before the first frame update
     void Start()
     {
         _p1Lives = FindObjectOfType<p1Lives>();
         _p1Score = FindObjectOfType<p1Score>();
+        _p1Shooting = FindObjectOfType<p1Shooting>();
         DisableKeyImage();
 
     }
@@ -29,6 +34,7 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetPlayerWeapon();
         UpdateText();
     }
 
@@ -54,6 +60,18 @@ public class HUD : MonoBehaviour
     public void DisableKeyImage()
     {
         keySilhouette.SetActive(false);
+    }
+
+    public void GetPlayerWeapon()
+    {
+        if (_p1Shooting.GetShootingMode())
+        {
+            weaponHUD.sprite = arrowImg;
+        }
+        else if (!_p1Shooting.GetShootingMode())
+        {
+            weaponHUD.sprite = swordImg;
+        }
     }
 
 
