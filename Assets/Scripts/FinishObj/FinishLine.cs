@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
+    [SerializeField] private string gameOverLevelName = "GameOver";
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class FinishLine : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(gameOverLevelName);
         }
     }
 }
