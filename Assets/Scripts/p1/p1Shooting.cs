@@ -17,15 +17,9 @@ public class p1Shooting : MonoBehaviour
     private float xDirection;
     private float yDirection;
 
-    [SerializeField] private Transform pUp;
-    [SerializeField] private Transform pDown;
-    [SerializeField] private Transform pLeft;
-    [SerializeField] private Transform pRight;
-
-    [SerializeField] private Transform pUpLeft;
-    [SerializeField] private Transform pUpRight;
-    [SerializeField] private Transform pDownLeft;
-    [SerializeField] private Transform pDownRight;
+    [SerializeField] private GameObject fireCircle;
+    [SerializeField] private GameObject fireCirclePivotPoint;
+    [SerializeField] private GameObject firePoint;
 
     public bool isShooting = true;
 
@@ -37,7 +31,9 @@ public class p1Shooting : MonoBehaviour
     private InputAction _lookDirection;
 
     public Camera playerCamera;
-    public Vector2 mousePosition;
+    [FormerlySerializedAs("mousePosition")] public Vector2 lookPosition;
+    private Vector2 _fireDirection;
+    private float _firingAngle;
     
     private void Awake()
     {
@@ -56,15 +52,13 @@ public class p1Shooting : MonoBehaviour
         xDirection = _lookDirection.ReadValue<Vector2>().x;
         yDirection = _lookDirection.ReadValue<Vector2>().y;
 
-        mousePosition = playerCamera.ScreenToWorldPoint(Input.mousePosition);
+        lookPosition = playerCamera.ScreenToWorldPoint(Input.mousePosition);
 
     }
 
     private void FixedUpdate()
-    {
-        Vector2 fireDirection = mousePosition - _rigidbody2D.position;
-        float firingAgle = Mathf.Atan2(fireDirection.y, fireDirection.x) * Mathf.Rad2Deg - 90f;
-        Debug.Log("Firing angle: " + firingAgle);
+    { 
+        RotateCircle();
     }
 
     private void OnEnable()
@@ -86,6 +80,8 @@ public class p1Shooting : MonoBehaviour
     {
         _fire.Disable();
     }
+
+
 
     public void Fire(InputAction.CallbackContext callbackContext)
     {
@@ -110,9 +106,23 @@ public class p1Shooting : MonoBehaviour
             isShooting = true;
         }
     }
+    
+    void RotateCircle()
+    {
+
+        _fireDirection = lookPosition - _rigidbody2D.position;
+        _firingAngle = Mathf.Atan2(_fireDirection.y, _fireDirection.x) * Mathf.Rad2Deg - 90f;
+        float rotationSpeed = 10f;
+        fireCirclePivotPoint.transform.rotation = Quaternion.Euler(0, 0, _firingAngle);
+    }
+    
     void ShootBullet()
     {
         AudioSource.PlayClipAtPoint(bulletSound, transform.position);
+        GameObject newBullet = Instantiate(bullet, firePoint.transform.position, Quaternion.Euler(0, 0, _firingAngle)) as GameObject;
+        Rigidbody2D bulletRigidbody = newBullet.GetComponent<Rigidbody2D>();
+        bulletRigidbody.velocity = _fireDirection * bulletForceAmount;
+
     }
 
     void SwingSword()
@@ -132,3 +142,6 @@ public class p1Shooting : MonoBehaviour
         }
     }
 }
+
+// References:
+// https://docs.unity3d.com/ScriptReference/Quaternion.Euler.html

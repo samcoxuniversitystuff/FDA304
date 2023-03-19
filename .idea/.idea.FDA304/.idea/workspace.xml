@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/polyDungeons.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/polyDungeons.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/polyDungeons.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/polyDungeons.inputactions.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +109,8 @@
       <workItem from="1678951622163" duration="688000" />
       <workItem from="1678977854834" duration="812000" />
       <workItem from="1679133580451" duration="3294000" />
-      <workItem from="1679156170979" duration="5932000" />
+      <workItem from="1679156170979" duration="6687000" />
+      <workItem from="1679215995034" duration="4872000" />
     </task>
     <servers />
   </component>
