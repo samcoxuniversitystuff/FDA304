@@ -28,7 +28,8 @@ public class p1Shooting : MonoBehaviour
     public PolyDungeons Controls;
     private InputAction _fire;
     private InputAction _switchWeapon;
-    private InputAction _lookDirection;
+    private InputAction _controllerDirection;
+    public InputAction rightStick;
 
     public Camera playerCamera;
     [FormerlySerializedAs("mousePosition")] public Vector2 lookPosition;
@@ -49,10 +50,10 @@ public class p1Shooting : MonoBehaviour
 
     private void Update()
     {
-        xDirection = _lookDirection.ReadValue<Vector2>().x;
-        yDirection = _lookDirection.ReadValue<Vector2>().y;
+        xDirection = _controllerDirection.ReadValue<Vector2>().x;
+        yDirection = _controllerDirection.ReadValue<Vector2>().y;
 
-        lookPosition = playerCamera.ScreenToWorldPoint(Input.mousePosition);
+
 
     }
 
@@ -63,7 +64,8 @@ public class p1Shooting : MonoBehaviour
 
     private void OnEnable()
     {
-        _lookDirection = Controls.Player.ShootingDirection;
+        rightStick.Enable();
+        _controllerDirection = Controls.Player.ShootingDirection;
         
         _fire = Controls.Player.Fire;
         _switchWeapon = Controls.Player.SwitchWeapon;
@@ -78,6 +80,7 @@ public class p1Shooting : MonoBehaviour
 
     private void OnDisable()
     {
+        rightStick.Disable();
         _fire.Disable();
     }
 
@@ -109,10 +112,9 @@ public class p1Shooting : MonoBehaviour
     
     void RotateCircle()
     {
-
+        lookPosition = playerCamera.ScreenToWorldPoint(Input.mousePosition);
         _fireDirection = lookPosition - _rigidbody2D.position;
         _firingAngle = Mathf.Atan2(_fireDirection.y, _fireDirection.x) * Mathf.Rad2Deg - 90f;
-        float rotationSpeed = 10f;
         fireCirclePivotPoint.transform.rotation = Quaternion.Euler(0, 0, _firingAngle);
     }
     

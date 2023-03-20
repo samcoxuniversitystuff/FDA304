@@ -586,6 +586,55 @@ MonoBehaviour:
   firePoint: {fileID: 3211509524126270271}
   isShooting: 1
   bulletSound: {fileID: 8300000, guid: 1303f1c2b5a63754f92198f790b4b736, type: 3}
+  rightStick:
+    m_Name: Right Stick
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2fe7604a-7c72-4375-9aa4-9a55683e19a9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: rStick
+      m_Id: 1371184b-94a0-49b7-be4b-e11cef6825c3
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 0caa50b4-1fdc-423b-a248-9350c1ce25e3
+      m_Path: <Gamepad>/rightStick/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 7360defa-85ad-44d2-a2b0-93d4946a62a7
+      m_Path: <Gamepad>/rightStick/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
+    - m_Name: left
+      m_Id: fd7a95db-a215-4fd6-a0ba-6f350a5ee8c0
+      m_Path: <Gamepad>/rightStick/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 99911931-fcf2-4bb4-aaa3-83ef10490cd5
+      m_Path: <Gamepad>/rightStick/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
+    m_Flags: 0
   playerCamera: {fileID: 0}
   lookPosition: {x: 0, y: 0}
 --- !u!114 &1118480816

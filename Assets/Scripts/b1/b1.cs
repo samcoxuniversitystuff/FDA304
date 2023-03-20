@@ -16,6 +16,8 @@ public class b1 : MonoBehaviour
     [SerializeField] private GameObject explosion;
     [SerializeField] private AudioClip explosionPoint;
 
+    [SerializeField] private float rotationSpeed = 1;
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Bullet"))
@@ -56,6 +58,7 @@ public class b1 : MonoBehaviour
     
     private void Update()
     {
+        transform.Rotate(new Vector3(0, 0, rotationSpeed));
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
