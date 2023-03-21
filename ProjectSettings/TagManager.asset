@@ -9,6 +9,7 @@ TagManager:
   - Walls
   - Water
   - eSpawner
+  - Enemy2
   layers:
   - Default
   - TransparentFX

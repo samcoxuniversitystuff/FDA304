@@ -49,8 +49,15 @@ public class enemySpawner : MonoBehaviour
         {
             SpawnEnemiesInSpawnPoint(SpawnPoint2);
             _timer = 0;
+
         }
     }
+
+    void SpawnPatrolEnemies()
+    {
+
+    }
+
     public void SpawnNewEnemies()
     {
         AudioSource.PlayClipAtPoint(glassSound, transform.position);

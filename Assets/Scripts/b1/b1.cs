@@ -48,6 +48,13 @@ public class b1 : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("Enemy destroyed.");
         }
+        else if (col.gameObject.CompareTag("Enemy2"))
+        {
+            e2Health _e2Health = col.gameObject.GetComponent<e2Health>();
+            _e2Health.reduceHealth(20);
+            AudioSource.PlayClipAtPoint(explosionPoint, transform.position, 1);
+            Destroy(this.gameObject);
+        }
 
     }
 
