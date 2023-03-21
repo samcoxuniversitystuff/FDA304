@@ -32,7 +32,10 @@ public class e1Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        MoveToPlayer();
+        if (_p1Movement != null)
+        {
+            MoveToPlayer();
+        }
     }
 
 

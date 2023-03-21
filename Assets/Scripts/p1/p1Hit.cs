@@ -30,5 +30,10 @@ public class p1Hit : MonoBehaviour
         {
             _p1Lives.SetLives(0);
         }
+
+        else if (col.gameObject.CompareTag("Enemy2"))
+        {
+            _p1Lives.SetLives(0);
+        }
     }
 }
