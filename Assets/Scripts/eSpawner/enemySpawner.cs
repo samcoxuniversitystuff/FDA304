@@ -47,15 +47,21 @@ public class enemySpawner : MonoBehaviour
         }
         else
         {
-            SpawnEnemiesInSpawnPoint(SpawnPoint2);
-            _timer = 0;
+            StartCoroutine(PrepareForPatrolEnemies());
 
         }
     }
 
+    IEnumerator PrepareForPatrolEnemies()
+    {
+        SpawnPatrolEnemies();
+        yield break;
+    }
+
     void SpawnPatrolEnemies()
     {
-
+        SpawnEnemiesInSpawnPoint(SpawnPoint2);
+        _timer = 0;
     }
 
     public void SpawnNewEnemies()

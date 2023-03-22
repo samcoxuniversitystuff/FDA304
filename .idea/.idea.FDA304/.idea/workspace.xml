@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/e1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/e1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Documents/Builds/polyDungeons Build 19_03_2023/polyDungeons Linux 19_03_2023/polyDungeons.x86_64" />
+      <option name="EXE_PATH" value="$USER_HOME$/Documents/Builds/polyDungeons Build 19_03_2023/polyDungeons Windows 19_03_2023\polyDungeons (build 19_03_2023).exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Sam\Documents\Builds\polyDungeons Build 19_03_2023\polyDungeons Linux 19_03_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -121,6 +124,7 @@
       <workItem from="1679258115095" duration="972000" />
       <workItem from="1679307051825" duration="1227000" />
       <workItem from="1679350429098" duration="1766000" />
+      <workItem from="1679428819516" duration="6578000" />
     </task>
     <servers />
   </component>

@@ -10,8 +10,11 @@ public class e1Movement : MonoBehaviour
 
     [SerializeField] float maxDistance = 5f;
     [SerializeField] private float enemySpeed = 1f;
+    
     private p1Movement _p1Movement;
     private Vector2 _enemyMovement;
+    [SerializeField] private bool isMoving = true;
+    
     [SerializeField] private Animator enemyAnimator;
     private Vector2 _animationDirection;
     private Vector2 _movementDirection;
@@ -32,7 +35,7 @@ public class e1Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (_p1Movement != null)
+        if (_p1Movement != null && isMoving)
         {
             MoveToPlayer();
         }
@@ -41,12 +44,16 @@ public class e1Movement : MonoBehaviour
 
     void MoveToPlayer()
     {
+        /*
         _movementDirection = Vector2.MoveTowards(transform.position, 
             _p1Movement.transform.position,
             enemySpeed * Time.deltaTime);
         Debug.Log("Movement Direction: " + _movementDirection);
-        transform.position = _movementDirection;
-
+        _rigidbody2D.position = _movementDirection;
+        */
+        _movementDirection =  (_p1Movement.gameObject.transform.position - transform.position ).normalized * enemySpeed;
+        // Subtraction theory: https://youtu.be/LNLVOjbrQj4?t=397
+        _rigidbody2D.velocity = _movementDirection;
     }
     
     void UpdateAnimation()
@@ -58,8 +65,25 @@ public class e1Movement : MonoBehaviour
         enemyAnimator.SetFloat("Speed", _animationDirection.sqrMagnitude);
     }
 
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Walls"))
+        {
+            isMoving = false;
+            if (transform.position.x <= col.gameObject.transform.position.x)
+            {
+                _rigidbody2D.AddForce(Vector2.right, ForceMode2D.Impulse);
+            }
+        }
+    }
 
-
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Walls"))
+        {
+            isMoving = true;
+        }
+    }
 }
 
 // Resources:
