@@ -45,8 +45,8 @@ public class b1 : MonoBehaviour
             
             // Destroy enemy and bullet. 
             Destroy(col.gameObject);
-            Destroy(this.gameObject);
             Debug.Log("Enemy destroyed.");
+            Destroy(this.gameObject);
         }
         else if (col.gameObject.CompareTag("Enemy2"))
         {

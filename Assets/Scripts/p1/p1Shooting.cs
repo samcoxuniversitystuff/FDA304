@@ -35,6 +35,9 @@ public class p1Shooting : MonoBehaviour
     [FormerlySerializedAs("mousePosition")] public Vector2 lookPosition;
     private Vector2 _fireDirection;
     private float _firingAngle;
+
+    [SerializeField] private GameObject swordGo;
+    [SerializeField] private GameObject swordSpawnPoint;
     
     private void Awake()
     {
@@ -129,7 +132,7 @@ public class p1Shooting : MonoBehaviour
 
     void SwingSword()
     {
-        
+        Instantiate(swordGo, swordSpawnPoint.transform.position, Quaternion.Euler(0, 0, _firingAngle));
     }
 
     public bool GetShootingMode()
