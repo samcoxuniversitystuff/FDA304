@@ -6,10 +6,13 @@ using UnityEngine;
 public class s1Attack : MonoBehaviour
 {
     [SerializeField] private AudioClip hitSound;
+
+    private p1Shooting _playerShooting;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _playerShooting = FindObjectOfType<p1Shooting>();
+        _playerShooting.SetCanSpawnSword(false);
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class s1Attack : MonoBehaviour
             p1Score playerScore = FindObjectOfType<p1Score>();
             playerScore.AddScore(1);
             // AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
+            _playerShooting.SetCanSpawnSword(true);
             Destroy(col.gameObject);
             Destroy(this.gameObject);
         }
@@ -33,13 +37,26 @@ public class s1Attack : MonoBehaviour
             e2Health _e2Health = col.gameObject.GetComponent<e2Health>();
             _e2Health.reduceHealth(25);
             // AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
+            _playerShooting.SetCanSpawnSword(true);
             Destroy(this.gameObject);
         }
         else if (col.gameObject.CompareTag("eSpawner"))
         {
             enemySpawner spawner = col.gameObject.GetComponent<enemySpawner>();
             spawner.ReduceHealth(50);
+            _playerShooting.SetCanSpawnSword(true);
             Destroy(this.gameObject);
         }
+    }
+
+    public void SwordBegin()
+    {
+        
+    }
+
+    public void SwordEnd()
+    {
+        _playerShooting.SetCanSpawnSword(true);
+        Destroy(this.gameObject);
     }
 }

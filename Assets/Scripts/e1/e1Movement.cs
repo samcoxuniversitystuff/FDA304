@@ -30,7 +30,10 @@ public class e1Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateAnimation();
+        if (_p1Movement != null)
+        {
+            UpdateAnimation();
+        }
     }
 
     void FixedUpdate()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3836860037405605778}
   - component: {fileID: 5475798450923522081}
   - component: {fileID: 5717299236870418007}
+  - component: {fileID: 489462528175478099}
   m_Layer: 0
   m_Name: s1
   m_TagString: Untagged
@@ -125,3 +126,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitSound: {fileID: 0}
+--- !u!111 &489462528175478099
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909512340664982792}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 90715c38fafd48e4b8208ef823336c5f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 90715c38fafd48e4b8208ef823336c5f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

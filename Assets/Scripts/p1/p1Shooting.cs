@@ -36,6 +36,7 @@ public class p1Shooting : MonoBehaviour
     private Vector2 _fireDirection;
     private float _firingAngle;
 
+    public bool canSpawnSword = true;
     [SerializeField] private GameObject swordGo;
     [SerializeField] private GameObject swordSpawnPoint;
     
@@ -95,7 +96,7 @@ public class p1Shooting : MonoBehaviour
         {
             ShootBullet();
         }
-        else if (!isShooting)
+        else if (!isShooting && canSpawnSword)
         {
             SwingSword();
         }
@@ -132,7 +133,8 @@ public class p1Shooting : MonoBehaviour
 
     void SwingSword()
     {
-        Instantiate(swordGo, swordSpawnPoint.transform.position, Quaternion.Euler(0, 0, _firingAngle));
+       GameObject newSword = Instantiate(swordGo, swordSpawnPoint.transform.position, Quaternion.Euler(0, 0, _firingAngle)) as GameObject;
+       newSword.transform.parent = swordSpawnPoint.transform;
     }
 
     public bool GetShootingMode()
@@ -145,6 +147,11 @@ public class p1Shooting : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void SetCanSpawnSword(bool condition)
+    {
+        canSpawnSword = condition;
     }
 }
 
