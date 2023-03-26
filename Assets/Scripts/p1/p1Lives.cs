@@ -6,6 +6,8 @@ using UnityEngine;
 public class p1Lives : MonoBehaviour
 {
     [SerializeField] private int lives = 3;
+
+    [SerializeField] private AudioClip deathSound;
     // Start is called bef0ore the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class p1Lives : MonoBehaviour
 
     void KillPlayer()
     {
+        AudioSource.PlayClipAtPoint(deathSound, transform.position, 1);
+        
         GameManager GM = FindObjectOfType<GameManager>();
         GM.StartCoroutine(GM.ResetGame());
         

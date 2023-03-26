@@ -62,7 +62,7 @@ public class e1Movement : MonoBehaviour
     void UpdateAnimation()
     {
         _animationDirection = _p1Movement.GetPlayerDirection();
-        Debug.Log("Animation Direction: " + _animationDirection);
+        // Debug.Log("Animation Direction: " + _animationDirection);
         enemyAnimator.SetFloat("Horizontal", _animationDirection.x);
         enemyAnimator.SetFloat("Vertical", _animationDirection.y);
         enemyAnimator.SetFloat("Speed", _animationDirection.sqrMagnitude);

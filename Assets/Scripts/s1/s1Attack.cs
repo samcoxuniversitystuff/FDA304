@@ -30,7 +30,7 @@ public class s1Attack : MonoBehaviour
             // AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
             _playerShooting.SetCanSpawnSword(true);
             Destroy(col.gameObject);
-            Destroy(this.gameObject);
+            // Destroy(this.gameObject);
         }
         else if (col.gameObject.CompareTag("Enemy2"))
         {
@@ -38,14 +38,14 @@ public class s1Attack : MonoBehaviour
             _e2Health.reduceHealth(25);
             // AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
             _playerShooting.SetCanSpawnSword(true);
-            Destroy(this.gameObject);
+            // Destroy(this.gameObject);
         }
         else if (col.gameObject.CompareTag("eSpawner"))
         {
             enemySpawner spawner = col.gameObject.GetComponent<enemySpawner>();
             spawner.ReduceHealth(50);
             _playerShooting.SetCanSpawnSword(true);
-            Destroy(this.gameObject);
+            // Destroy(this.gameObject);
         }
     }
 

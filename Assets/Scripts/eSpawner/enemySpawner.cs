@@ -47,21 +47,16 @@ public class enemySpawner : MonoBehaviour
         }
         else
         {
-            StartCoroutine(PrepareForPatrolEnemies());
-
+            float eSpawnerAmount = FindObjectsOfType<enemySpawner>().Length;
+            float enemyAmount = FindObjectsOfType<e1Movement>().Length;
+            Debug.Log("Amount of enemy spawners: " + eSpawnerAmount + " " + "Amount of enemies: " + enemyAmount);
+            if (enemyAmount <= eSpawnerAmount)
+            {
+                SpawnEnemiesInSpawnPoint(SpawnPoint2);
+            }
+            
+            _timer = 0;
         }
-    }
-
-    IEnumerator PrepareForPatrolEnemies()
-    {
-        SpawnPatrolEnemies();
-        yield break;
-    }
-
-    void SpawnPatrolEnemies()
-    {
-        SpawnEnemiesInSpawnPoint(SpawnPoint2);
-        _timer = 0;
     }
 
     public void SpawnNewEnemies()

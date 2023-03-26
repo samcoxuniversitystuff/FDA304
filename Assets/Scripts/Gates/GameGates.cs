@@ -9,6 +9,8 @@ public class GameGates : MonoBehaviour
 
     [SerializeField] private string gateKey;
 
+    [SerializeField] private AudioClip unlockSound;
+
     [SerializeField] private float gateMoveAmount;
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class GameGates : MonoBehaviour
             p1Key playerKey = col.gameObject.GetComponent<p1Key>();
             if (playerKey.GetHasKey() && playerKey.GetPlayerKey() == gateKey)
             { 
+                AudioSource.PlayClipAtPoint(unlockSound, transform.position, 1);
                 OpenGate();
                 playerKey.SetPlayerKey("");
                 playerKey.SetHasKey(false);

@@ -6,6 +6,8 @@ using UnityEngine;
 public class keyObject : MonoBehaviour
 {
     [SerializeField] private string keyCode;
+
+    [SerializeField] private AudioClip keySound;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class keyObject : MonoBehaviour
             p1Key _p1Key = col.gameObject.GetComponent<p1Key>();
             if (!_p1Key.GetHasKey())
             {
+                AudioSource.PlayClipAtPoint(keySound, transform.position, 1);
                 _p1Key.SetHasKey(true);
                 _p1Key.SetPlayerKey(keyCode);
                 Debug.Log("The player now has the key " + keyCode);
