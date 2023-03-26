@@ -52,11 +52,19 @@ public class enemySpawner : MonoBehaviour
             Debug.Log("Amount of enemy spawners: " + eSpawnerAmount + " " + "Amount of enemies: " + enemyAmount);
             if (enemyAmount <= eSpawnerAmount)
             {
-                SpawnEnemiesInSpawnPoint(SpawnPoint2);
+                _spriteRenderer.color = Color.blue;
+                Invoke("SpawnPatrolEnemy", 1);
+
             }
             
             _timer = 0;
         }
+    }
+
+    void SpawnPatrolEnemy()
+    {
+        SpawnEnemiesInSpawnPoint(SpawnPoint2);
+        CheckHealthLevel();
     }
 
     public void SpawnNewEnemies()

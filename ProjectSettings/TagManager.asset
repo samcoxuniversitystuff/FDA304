@@ -10,6 +10,7 @@ TagManager:
   - Water
   - eSpawner
   - Enemy2
+  - Sword
   layers:
   - Default
   - TransparentFX

@@ -3,14 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sam Cox/png/FireDrop.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sam Cox/png/FireDrop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sam Cox/xcf/FireDrop.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sam Cox/xcf/FireDrop.xcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Wilbo/WilboCoinSilver.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Wilbo/WilboCoinSilver.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FireParticle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FireParticle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WilboCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WilboCoin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/s1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/s1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl01.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lvl01.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/settings.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/settings.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/settingsCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/settingsCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver/GameEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gates/GameGates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Instructions-howtoplay/how2play.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/s1/s1Attack.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,7 +57,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Documents/Builds/polyDungeons Build 19_03_2023/polyDungeons Windows 19_03_2023\polyDungeons (build 19_03_2023).exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Documents/Builds/polyDungeons Build 19_03_2023/polyDungeons Linux 19_03_2023/polyDungeons.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Sam\Documents\Builds\polyDungeons Build 19_03_2023\polyDungeons Linux 19_03_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -134,7 +142,7 @@
       <workItem from="1679428819516" duration="6578000" />
       <workItem from="1679645398534" duration="4628000" />
       <workItem from="1679737178745" duration="2776000" />
-      <workItem from="1679823612319" duration="4958000" />
+      <workItem from="1679823612319" duration="8278000" />
     </task>
     <servers />
   </component>
