@@ -19,6 +19,7 @@ public class HUD : MonoBehaviour
     [SerializeField] private Image weaponHUD;
     [SerializeField] private Sprite arrowImg;
     [SerializeField] private Sprite swordImg;
+    [SerializeField] private TMP_Text weaponTypeTxt;
 
     
     // Start is called before the first frame update
@@ -67,10 +68,12 @@ public class HUD : MonoBehaviour
         if (_p1Shooting.GetShootingMode())
         {
             weaponHUD.sprite = arrowImg;
+            weaponTypeTxt.text = "Bullet";
         }
         else if (!_p1Shooting.GetShootingMode())
         {
             weaponHUD.sprite = swordImg;
+            weaponTypeTxt.text = "Sword";
         }
     }
 
