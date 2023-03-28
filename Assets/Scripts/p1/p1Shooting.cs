@@ -134,7 +134,7 @@ public class p1Shooting : MonoBehaviour
     void SwingSword()
     {
        GameObject newSword = Instantiate(swordGo, swordSpawnPoint.transform.position, Quaternion.Euler(0, 0, _firingAngle)) as GameObject;
-       newSword.transform.parent = swordSpawnPoint.transform;
+       // newSword.transform.parent = swordSpawnPoint.transform;
     }
 
     public bool GetShootingMode()

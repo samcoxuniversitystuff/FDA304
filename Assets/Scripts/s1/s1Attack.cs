@@ -8,9 +8,13 @@ public class s1Attack : MonoBehaviour
     [SerializeField] private AudioClip hitSound;
 
     private p1Shooting _playerShooting;
+
+    private p1Movement _p1Movement;
     // Start is called before the first frame update
     void Start()
     {
+        _p1Movement = FindObjectOfType<p1Movement>();
+        
         _playerShooting = FindObjectOfType<p1Shooting>();
         _playerShooting.SetCanSpawnSword(false);
     }
