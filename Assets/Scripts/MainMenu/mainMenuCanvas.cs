@@ -11,6 +11,8 @@ public class mainMenuCanvas : MonoBehaviour
     
     [SerializeField] private string settingsLevelName = "settings";
     
+    [SerializeField] private string feedbackURL;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,5 +43,10 @@ public class mainMenuCanvas : MonoBehaviour
     public void OpenInstructions()
     {
         SceneManager.LoadScene(instructionsLevelName);
+    }
+    
+    public void ProvideFeedback()
+    {
+        Application.OpenURL(feedbackURL);
     }
 }

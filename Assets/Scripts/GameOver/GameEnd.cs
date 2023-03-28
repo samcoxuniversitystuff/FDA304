@@ -8,6 +8,8 @@ public class GameEnd : MonoBehaviour
     [SerializeField] private string firstlevelname = "level01";
 
     [SerializeField] private string mainmenuname = "mainmenu";
+
+    [SerializeField] private string feedbackURL;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,10 @@ public class GameEnd : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ProvideFeedback()
+    {
+        Application.OpenURL(feedbackURL);
     }
 }
