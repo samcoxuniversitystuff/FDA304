@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e1a1bf066fc384cb3146b919b35868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
+  lives: 5
   deathSound: {fileID: 8300000, guid: eda12626fef1f884aaee92156c979ee6, type: 3}
 --- !u!114 &1781918720
 MonoBehaviour:

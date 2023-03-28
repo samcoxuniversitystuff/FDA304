@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/s1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/s1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOver/GameEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameOver/GameEnd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/mainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/mainMenuCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/s1/s1Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/s1/s1Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/settings.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/settings.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +130,7 @@
       <workItem from="1679737178745" duration="2776000" />
       <workItem from="1679823612319" duration="8278000" />
       <workItem from="1679940252043" duration="2507000" />
-      <workItem from="1680009237659" duration="1091000" />
+      <workItem from="1680009237659" duration="1691000" />
     </task>
     <servers />
   </component>
