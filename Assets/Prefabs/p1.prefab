@@ -680,6 +680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97952dfdf297148898af61a2d1504142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitClip: {fileID: 8300000, guid: 5e92953a749d6e6498e4c1112da1ab0b, type: 3}
+  normalColour: {r: 1, g: 1, b: 1, a: 1}
+  hitColour: {r: 0.754717, g: 0.05339978, b: 0.05339978, a: 1}
 --- !u!114 &5986421979472530923
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +133,8 @@
       <workItem from="1679823612319" duration="8278000" />
       <workItem from="1679940252043" duration="2507000" />
       <workItem from="1680009237659" duration="2369000" />
-      <workItem from="1680165086461" duration="845000" />
+      <workItem from="1680165086461" duration="1443000" />
+      <workItem from="1680357662763" duration="996000" />
     </task>
     <servers />
   </component>

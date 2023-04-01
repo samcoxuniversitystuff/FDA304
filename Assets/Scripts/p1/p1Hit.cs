@@ -5,11 +5,21 @@ using UnityEngine;
 
 public class p1Hit : MonoBehaviour
 {
+    [SerializeField] private AudioClip hitClip;
+    
+    private SpriteRenderer _spriteRenderer;
+    
     private p1Lives _p1Lives;
+
+    [SerializeField] private Color normalColour;
+    [SerializeField] private Color hitColour;
+
+    private bool _canGetHit = true;
     // Start is called before the first frame update
     void Start()
     {
         _p1Lives = GetComponent<p1Lives>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -20,21 +30,40 @@ public class p1Hit : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-
-        if (col.gameObject.CompareTag("Enemy"))
+        if (_canGetHit)
         {
-            Destroy(col.gameObject);
-            _p1Lives.DeductLives(1);
-        }
+            if (col.gameObject.CompareTag("Enemy"))
+            {
+                _canGetHit = false;
+                AudioSource.PlayClipAtPoint(hitClip, transform.position);
+                Destroy(col.gameObject);
+                _spriteRenderer.color = hitColour;
+                _p1Lives.DeductLives(1);
+                Invoke("ReducePlayerLives", 1);
+
+            }
         
-        else if (col.gameObject.CompareTag("Water"))
-        {
-            _p1Lives.SetLives(0);
+            else if (col.gameObject.CompareTag("Water"))
+            {
+                DestroyPlayer();
+            }
+
+            else if (col.gameObject.CompareTag("Enemy2"))
+            {
+                DestroyPlayer();
+            }
         }
 
-        else if (col.gameObject.CompareTag("Enemy2"))
-        {
-            _p1Lives.SetLives(0);
-        }
+    }
+
+    void ReducePlayerLives()
+    {
+        _spriteRenderer.color = normalColour;
+        _canGetHit = true;
+    }
+
+    void DestroyPlayer()
+    {
+        _p1Lives.SetLives(0);
     }
 }
