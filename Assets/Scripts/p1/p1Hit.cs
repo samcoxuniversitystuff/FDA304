@@ -30,11 +30,9 @@ public class p1Hit : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (_canGetHit)
-        {
+
             if (col.gameObject.CompareTag("Enemy"))
-            {
-                _canGetHit = false;
+            { 
                 AudioSource.PlayClipAtPoint(hitClip, transform.position);
                 Destroy(col.gameObject);
                 _spriteRenderer.color = hitColour;
@@ -52,14 +50,12 @@ public class p1Hit : MonoBehaviour
             {
                 DestroyPlayer();
             }
-        }
 
     }
 
     void ReducePlayerLives()
     {
         _spriteRenderer.color = normalColour;
-        _canGetHit = true;
     }
 
     void DestroyPlayer()

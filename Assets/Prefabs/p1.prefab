@@ -635,6 +635,46 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Right Stick
       m_Flags: 8
+    - m_Name: 2D Vector
+      m_Id: e3f0140c-bcf4-49ad-9fb2-6cbf6f4a55b4
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 4
+    - m_Name: up
+      m_Id: e74ae420-1dba-4bd1-9260-a1bf8c32522e
+      m_Path: <Mouse>/delta/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
+    - m_Name: down
+      m_Id: a3153260-61e4-43ff-89b3-6d04f3c2fcbd
+      m_Path: <Mouse>/delta/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
+    - m_Name: left
+      m_Id: bb759306-541a-428c-bbb4-37d5221dc8b1
+      m_Path: <Mouse>/delta/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 70dc5dde-beac-4b20-966c-0291cf61f7c4
+      m_Path: <Mouse>/delta/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Stick
+      m_Flags: 8
     m_Flags: 0
   playerCamera: {fileID: 0}
   lookPosition: {x: 0, y: 0}

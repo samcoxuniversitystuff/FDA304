@@ -20,11 +20,14 @@ public class e1Movement : MonoBehaviour
     private Vector2 _movementDirection;
 
     private Transform _player;
+
+    private Vector3 _originalEnemyPosition;
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _p1Movement = FindObjectOfType<p1Movement>();
+        _originalEnemyPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -38,9 +41,15 @@ public class e1Movement : MonoBehaviour
 
     void FixedUpdate()
     {
+        Vector3 originalEnemyLocationCalculation =
+            (_originalEnemyPosition - transform.position).normalized * enemySpeed;
         if (_p1Movement != null && isMoving)
         {
             MoveToPlayer();
+        }
+        else if (_p1Movement == null && transform.position != originalEnemyLocationCalculation)
+        {
+            _rigidbody2D.velocity = originalEnemyLocationCalculation;
         }
     }
 

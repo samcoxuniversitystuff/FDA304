@@ -4,8 +4,9 @@
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +135,9 @@
       <workItem from="1679940252043" duration="2507000" />
       <workItem from="1680009237659" duration="2369000" />
       <workItem from="1680165086461" duration="1443000" />
-      <workItem from="1680357662763" duration="996000" />
+      <workItem from="1680357662763" duration="1678000" />
+      <workItem from="1680456833469" duration="2100000" />
+      <workItem from="1680507958193" duration="3782000" />
     </task>
     <servers />
   </component>

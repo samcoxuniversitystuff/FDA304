@@ -35,6 +35,8 @@ public class p1Shooting : MonoBehaviour
     [FormerlySerializedAs("mousePosition")] public Vector2 lookPosition;
     private Vector2 _fireDirection;
     private float _firingAngle;
+    private Vector2 _mousePosition;
+    private Vector2 _rightStickPosition;
 
     public bool canSpawnSword = true;
     [SerializeField] private GameObject swordGo;
@@ -56,10 +58,10 @@ public class p1Shooting : MonoBehaviour
     {
         xDirection = _controllerDirection.ReadValue<Vector2>().x;
         yDirection = _controllerDirection.ReadValue<Vector2>().y;
+        _rightStickPosition = rightStick.ReadValue<Vector2>();
+        _mousePosition = Input.mousePosition;
 
-
-
-    }
+        }
 
     private void FixedUpdate()
     { 
@@ -116,7 +118,7 @@ public class p1Shooting : MonoBehaviour
     
     void RotateCircle()
     {
-        lookPosition = playerCamera.ScreenToWorldPoint(Input.mousePosition);
+        lookPosition = playerCamera.ScreenToWorldPoint(_mousePosition);
         _fireDirection = lookPosition - _rigidbody2D.position;
         _firingAngle = Mathf.Atan2(_fireDirection.y, _fireDirection.x) * Mathf.Rad2Deg - 90f;
         fireCirclePivotPoint.transform.rotation = Quaternion.Euler(0, 0, _firingAngle);
@@ -157,3 +159,5 @@ public class p1Shooting : MonoBehaviour
 
 // References:
 // https://docs.unity3d.com/ScriptReference/Quaternion.Euler.html
+// https://youtu.be/LNLVOjbrQj4
+// https://youtu.be/HmXU4dZbaMw
