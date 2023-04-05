@@ -3,20 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/anim/sword/sword01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/anim/sword/sword01.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/e1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/e1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD/PauseGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD/PauseGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sam Cox/png/Signs/Wilbo/Wilbo1.ase" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sam Cox/png/Signs/Wilbo/Wilbo1.ase.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sam Cox/png/Signs/Wilbo/Wilbocoat.ase" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sam Cox/png/Signs/Wilbo/Wilbocoat.ase.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +141,7 @@
       <workItem from="1680622010629" duration="10000" />
       <workItem from="1680622053591" duration="6334000" />
       <workItem from="1680693011488" duration="1074000" />
+      <workItem from="1680716669400" duration="206000" />
     </task>
     <servers />
   </component>
