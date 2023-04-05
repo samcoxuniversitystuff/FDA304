@@ -100,7 +100,7 @@ public class p1Shooting : MonoBehaviour
         }
         else if (!isShooting && canSpawnSword)
         {
-            SwingSword();
+            SpawnSword();
         }
     }
 
@@ -127,15 +127,15 @@ public class p1Shooting : MonoBehaviour
     void ShootBullet()
     {
         AudioSource.PlayClipAtPoint(bulletSound, transform.position);
-        GameObject newBullet = Instantiate(bullet, firePoint.transform.position, Quaternion.Euler(0, 0, _firingAngle)) as GameObject;
+        GameObject newBullet = Instantiate(bullet, firePoint.transform.position, Quaternion.Euler(0, 0, _firingAngle));
         Rigidbody2D bulletRigidbody = newBullet.GetComponent<Rigidbody2D>();
         bulletRigidbody.velocity = _fireDirection * bulletForceAmount;
 
     }
 
-    void SwingSword()
+    void SpawnSword()
     {
-       GameObject newSword = Instantiate(swordGo, swordSpawnPoint.transform.position, Quaternion.Euler(0, 0, _firingAngle)) as GameObject;
+       GameObject newSword = Instantiate(swordGo, swordSpawnPoint.transform.position, Quaternion.Euler(0, 0, _firingAngle));
        newSword.transform.parent = swordSpawnPoint.transform;
     }
 

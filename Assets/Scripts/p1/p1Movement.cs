@@ -73,6 +73,8 @@ public class p1Movement : MonoBehaviour
         {
             movementSpeed = originalSpeed;
         }
+        
+        // Debug.Log("MovementSpeed = " + movementSpeed);
     }
 
 
@@ -102,6 +104,11 @@ public class p1Movement : MonoBehaviour
     public Vector2 GetPlayerDirection()
     {
         return movementDirection;
+    }
+
+    public float GetMovementSpeed()
+    {
+        return movementSpeed;
     }
 }
 

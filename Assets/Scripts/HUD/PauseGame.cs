@@ -12,6 +12,8 @@ public class PauseGame : MonoBehaviour
     [SerializeField] GameObject PauseObj;
 
     public static bool isPaused = false;
+
+    [SerializeField] private string mainMenuName;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,5 +65,10 @@ public class PauseGame : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void OpenMainMenu()
+    {
+        SceneManager.LoadScene(mainMenuName);
     }
 }

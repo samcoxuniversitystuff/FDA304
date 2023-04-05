@@ -67,6 +67,16 @@ public class e1Movement : MonoBehaviour
         // Subtraction theory: https://youtu.be/LNLVOjbrQj4?t=397
         _rigidbody2D.velocity = _movementDirection;
     }
+
+    public void SetIsMoving(bool condition)
+    {
+        isMoving = condition;
+    }
+
+    public Vector2 GetEnemyMovementDirection()
+    {
+        return _movementDirection;
+    }
     
     void UpdateAnimation()
     {

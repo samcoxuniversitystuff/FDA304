@@ -3,10 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/anim/sword/sword01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/anim/sword/sword01.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUDCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/e1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/e1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/p1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD/PauseGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD/PauseGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/e1/e1Movement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Hit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Movement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +56,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:/Builds/polyDungeons/polyDungeons build 26_03_2023/polyDungeons Windows 26_03_2023\polyDungeons (build 26_03_2023).exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/polyDungeons/polyDungeons build 04_04_2023/polyDungeons Linux 04_04_2023/polyDungeons 04_04_2023.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Sam\Documents\Builds\polyDungeons Build 19_03_2023\polyDungeons Linux 19_03_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -138,6 +148,9 @@
       <workItem from="1680357662763" duration="1678000" />
       <workItem from="1680456833469" duration="2100000" />
       <workItem from="1680507958193" duration="3782000" />
+      <workItem from="1680622010629" duration="10000" />
+      <workItem from="1680622053591" duration="6334000" />
+      <workItem from="1680693011488" duration="1074000" />
     </task>
     <servers />
   </component>
