@@ -18,8 +18,12 @@ public class p1Shooting : MonoBehaviour
     private float yDirection;
 
     [SerializeField] private GameObject fireCircle;
+    [SerializeField] private GameObject fireCircleArrow;
     [SerializeField] private GameObject fireCirclePivotPoint;
     [SerializeField] private GameObject firePoint;
+
+    [SerializeField] private SpriteRenderer fireCircleSprite;
+    [SerializeField] private SpriteRenderer fireCircleArrowSprite;
 
     public bool isShooting = true;
 
@@ -39,6 +43,7 @@ public class p1Shooting : MonoBehaviour
     private Vector2 _rightStickPosition;
 
     public bool canSpawnSword = true;
+    private bool _canFire = true;
     [SerializeField] private GameObject swordGo;
     [SerializeField] private GameObject swordSpawnPoint;
     
@@ -94,14 +99,18 @@ public class p1Shooting : MonoBehaviour
 
     public void Fire(InputAction.CallbackContext callbackContext)
     {
-        if (isShooting)
+        if (_canFire)
         {
-            ShootBullet();
+            if (isShooting)
+            {
+                ShootBullet();
+            }
+            else if (!isShooting && canSpawnSword)
+            {
+                SpawnSword();
+            }
         }
-        else if (!isShooting && canSpawnSword)
-        {
-            SpawnSword();
-        }
+
     }
 
     public void SwitchWeapon(InputAction.CallbackContext callbackContext)
@@ -154,6 +163,29 @@ public class p1Shooting : MonoBehaviour
     public void SetCanSpawnSword(bool condition)
     {
         canSpawnSword = condition;
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Wilbo"))
+        {
+            ModifyFireCircleSpriteVisibility(false);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Wilbo"))
+        {
+            ModifyFireCircleSpriteVisibility(true);
+        }
+    }
+
+    public void ModifyFireCircleSpriteVisibility(bool condition)
+    {
+        fireCircleSprite.enabled = condition;
+        fireCircleArrowSprite.enabled = condition;
+        _canFire = condition;
     }
 }
 

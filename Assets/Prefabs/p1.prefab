@@ -583,8 +583,11 @@ MonoBehaviour:
   bullet: {fileID: 636454390383353488, guid: d6cd1ee92f89e6e4b9c53fc0328ae60a, type: 3}
   bulletForceAmount: 10
   fireCircle: {fileID: 4365839646686858869}
+  fireCircleArrow: {fileID: 479798304}
   fireCirclePivotPoint: {fileID: 115727644644885241}
   firePoint: {fileID: 3211509524126270271}
+  fireCircleSprite: {fileID: 3826575162192047334}
+  fireCircleArrowSprite: {fileID: 479798306}
   isShooting: 1
   bulletSound: {fileID: 8300000, guid: 1303f1c2b5a63754f92198f790b4b736, type: 3}
   rightStick:

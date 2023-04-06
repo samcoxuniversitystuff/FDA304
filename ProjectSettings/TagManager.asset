@@ -11,6 +11,7 @@ TagManager:
   - eSpawner
   - Enemy2
   - Sword
+  - Wilbo
   layers:
   - Default
   - TransparentFX
@@ -65,4 +66,7 @@ TagManager:
     locked: 0
   - name: Buildings
     uniqueID: 2125169865
+    locked: 0
+  - name: Text
+    uniqueID: 2813022713
     locked: 0
