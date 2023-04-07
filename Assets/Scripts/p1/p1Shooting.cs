@@ -164,22 +164,6 @@ public class p1Shooting : MonoBehaviour
     {
         canSpawnSword = condition;
     }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Wilbo"))
-        {
-            ModifyFireCircleSpriteVisibility(false);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Wilbo"))
-        {
-            ModifyFireCircleSpriteVisibility(true);
-        }
-    }
 
     public void ModifyFireCircleSpriteVisibility(bool condition)
     {

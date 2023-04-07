@@ -21,6 +21,5 @@ public class pCamera : MonoBehaviour
     void Update()
     {
         _mousepos = Input.mousePosition;
-        Debug.Log("Mouse position: " + _mousepos);
     }
 }
