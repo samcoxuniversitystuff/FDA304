@@ -46,7 +46,7 @@ public class p1Shooting : MonoBehaviour
     private bool _canFire = true;
     [SerializeField] private GameObject swordGo;
     [SerializeField] private GameObject swordSpawnPoint;
-    
+
     private void Awake()
     {
         Controls = new PolyDungeons();

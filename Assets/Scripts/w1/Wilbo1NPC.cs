@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.PlayerLoop;
 
 public class Wilbo1NPC : MonoBehaviour
 {
@@ -18,9 +19,32 @@ public class Wilbo1NPC : MonoBehaviour
     void Start()
     {
         speechBubbleObj.SetActive(false);
-        _dialogueNumberEnd = _wilboDialogueObj.dialogue.Length;
+        _dialogueNumberEnd = (_wilboDialogueObj.dialogue.Length - 1);
         UpdateWilboDialogue(_dialogueNumber);
     }
+    
+    void Update()
+    {
+        Debug.Log("Current Dialogue Number: " + _dialogueNumber);
+        Debug.Log("Last Dialogue Number: " + _dialogueNumberEnd);
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            if (_dialogueNumber + 1 <= _dialogueNumberEnd)
+            {
+                _dialogueNumber++;
+                UpdateWilboDialogue(_dialogueNumber);
+            }
+            else if (_dialogueNumber + 1 > _dialogueNumberEnd)
+            {
+                _dialogueNumber = 0;
+                UpdateWilboDialogue(_dialogueNumber);
+            }
+            
+
+        }
+    }
+    
 
     void UpdateWilboDialogue(int num)
     {
@@ -39,4 +63,6 @@ public class Wilbo1NPC : MonoBehaviour
     {
         speechBubbleObj.SetActive(false);
     }
+
+
 }

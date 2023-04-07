@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speechBubbleObj: {fileID: 8698117678292772029}
-  _wilboDialogueObj: {fileID: 11400000, guid: f5b3a1c6b8fdf5146abd05b4af32a7e3, type: 2}
+  _wilboDialogueObj: {fileID: 11400000, guid: 9e79d89c3f41d8b4b92ff18d547476cf, type: 2}
   dialogBoxText: {fileID: 6469776866589566536}
 --- !u!58 &373821794457904569
 CircleCollider2D:
