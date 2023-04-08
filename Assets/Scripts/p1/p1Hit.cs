@@ -74,6 +74,16 @@ public class p1Hit : MonoBehaviour
             {
                 DestroyPlayer();
             }
+            
+            else if (col.gameObject.CompareTag("Enemy3") && _canGetHit)
+            {
+                _canGetHit = false;
+                AudioSource.PlayClipAtPoint(hitClip, transform.position);
+                Destroy(col.gameObject);
+                _spriteRenderer.color = hitColour;
+                _p1Lives.DeductLives(1);
+                Invoke("ReturnToNormal", hitTime);
+            }
 
     }
 
