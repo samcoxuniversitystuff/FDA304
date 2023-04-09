@@ -49,6 +49,10 @@ public class e3FireBowl : MonoBehaviour
     IEnumerator DestroyBullet(GameObject bulletToDestroy)
     {
         yield return new WaitForSeconds(3);
-        Destroy(bulletToDestroy);
+
+        if (bulletToDestroy != null)
+        {
+            Destroy(bulletToDestroy);
+        }
     }
 }

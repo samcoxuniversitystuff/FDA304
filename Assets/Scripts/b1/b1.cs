@@ -55,6 +55,21 @@ public class b1 : MonoBehaviour
             AudioSource.PlayClipAtPoint(explosionPoint, transform.position, 1);
             Destroy(this.gameObject);
         }
+        
+        else if (col.gameObject.CompareTag("Enemy3"))
+        {
+            p1Score playerScore = FindObjectOfType<p1Score>();
+            playerScore.AddScore(1);
+            
+            // Create cool explosion effects.
+            // Instantiate(explosion, transform.position, quaternion.identity);
+            AudioSource.PlayClipAtPoint(explosionPoint, transform.position, 1);
+            
+            // Destroy enemy and bullet. 
+            Destroy(col.gameObject);
+            Debug.Log("Enemy destroyed.");
+            Destroy(this.gameObject);
+        }
 
     }
 
