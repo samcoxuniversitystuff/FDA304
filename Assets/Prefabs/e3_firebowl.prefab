@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 6369735225305240248}
   m_Layer: 0
   m_Name: e3_firebowl
-  m_TagString: Untagged
+  m_TagString: Enemy3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +149,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootLocationObj: {fileID: 6369735223901639313}
   bulletObj: {fileID: 728232772341360920, guid: 7c3b879d4c0e4054aaccaa38df916359, type: 3}
+  bulletSpeed: 5
+  minTimer: 1
+  maxTimer: 3
+  sprite1: {fileID: 21300000, guid: 681a5abba30b3fc489064477c902c80d, type: 3}
+  sprite2: {fileID: 21300000, guid: 44e49cf6f925bf648be43defcd5efdb0, type: 3}
+  shootingSpriteRender: {fileID: 6369735225305240252}
 --- !u!111 &6369735225305240248
 Animation:
   m_ObjectHideFlags: 0

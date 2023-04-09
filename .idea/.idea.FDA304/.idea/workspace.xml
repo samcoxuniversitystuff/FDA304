@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/firebowl_bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/firebowl_bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/e3_firebowl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/e3_firebowl.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level02.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level02.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/b1/b1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/e3/e3FireBowl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/e3/e3FireBowl.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +170,7 @@
       <workItem from="1680812571048" duration="1617000" />
       <workItem from="1680854381876" duration="5880000" />
       <workItem from="1680974873535" duration="2839000" />
-      <workItem from="1681029695376" duration="1511000" />
+      <workItem from="1681029695376" duration="2786000" />
     </task>
     <servers />
   </component>

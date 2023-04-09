@@ -17,6 +17,10 @@ public class e3FireBowl : MonoBehaviour
     [SerializeField] private float minTimer = 1;
     [SerializeField] private float maxTimer = 3;
     private float timer;
+
+    [SerializeField] private Sprite sprite1; // Normal sprite.
+    [SerializeField] private Sprite sprite2; // Firing sprite.
+    [SerializeField] private SpriteRenderer shootingSpriteRender;
     
     // Start is called before the first frame update
     void Start()
@@ -40,6 +44,7 @@ public class e3FireBowl : MonoBehaviour
 
     public void Fire()
     {
+        shootingSpriteRender.sprite = sprite2;
         GameObject newBullet = Instantiate(bulletObj, shootLocationObj.position, quaternion.identity);
         Rigidbody2D bulletRB = newBullet.GetComponent<Rigidbody2D>();
         bulletRB.velocity = Vector2.down * bulletSpeed;
@@ -54,5 +59,7 @@ public class e3FireBowl : MonoBehaviour
         {
             Destroy(bulletToDestroy);
         }
+        
+        shootingSpriteRender.sprite = sprite1;
     }
 }
