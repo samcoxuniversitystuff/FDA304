@@ -6,7 +6,9 @@ public class wCoin : MonoBehaviour
 {
     [SerializeField] int scoreToAdd = 1;
 
-    [SerializeField] private AudioClip moneySound; 
+    [SerializeField] private AudioClip moneySound;
+    [SerializeField] private float moneySoundVolume = 1f;
+    
     // Start is called before the first frame update
     void Start()
     {

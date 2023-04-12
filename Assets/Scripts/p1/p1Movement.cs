@@ -33,6 +33,11 @@ public class p1Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Vector3 playerPos = transform.position;
+        PlayerPrefs.SetFloat("PlayerX", playerPos.x);
+        PlayerPrefs.SetFloat("PlayerY", playerPos.y);
+        PlayerPrefs.SetFloat("PlayerZ", playerPos.z);
+        
         rb2d = GetComponent<Rigidbody2D>();
         originalSpeed = movementSpeed;
         rushSpeed = movementSpeed * speedMultiplier;

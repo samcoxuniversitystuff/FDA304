@@ -26,7 +26,6 @@ public class SaveFlag : MonoBehaviour
 
     public void SaveGame()
     {
-       
     }
 
     private void OnCollisionEnter2D(Collision2D col)

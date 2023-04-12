@@ -23,5 +23,12 @@ public class e3_bullet : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        
+        else if (other.gameObject.CompareTag("eSpawner"))
+        {
+            enemySpawner spawner = other.gameObject.GetComponent<enemySpawner>();
+            spawner.ReduceHealth(25);
+            Destroy(this.gameObject);
+        }
     }
 }

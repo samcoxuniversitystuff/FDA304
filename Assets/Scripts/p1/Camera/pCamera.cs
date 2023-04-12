@@ -22,4 +22,9 @@ public class pCamera : MonoBehaviour
     {
         _mousepos = Input.mousePosition;
     }
+
+    public void UpdateFollowObj(GameObject objToFollow)
+    {
+        cinemachineVirtualCamera.Follow = objToFollow.transform;
+    }
 }

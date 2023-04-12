@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
   dialogue:
-  - 'The weather''s pretty good today. '
-  - Actually no, it's not good.
-  - It's raining and it's windy >:(
+  - Welcome! I'm Wilbo.
+  - ' The guy doing rounds is Jim. '
+  - 'You can save your progess by going to the save station above me. '
+  - 'You''ll come back if your journey turns deadly. '
+  - You should also be aware that there's some red bowls shooting bullets.
+  - Dodge them!
+  - See ya! :D
+  - 

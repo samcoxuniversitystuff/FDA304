@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c860f3f6c514e86bff8aba35ae517d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObj: {fileID: 6683729888029912275, guid: d5b3119c33304aa45964cc2f8b0c1f64, type: 3}
   resetTime: 3
 --- !u!114 &564565381512894079
 MonoBehaviour:

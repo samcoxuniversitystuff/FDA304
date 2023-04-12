@@ -28,11 +28,8 @@ public class p1Lives : MonoBehaviour
         AudioSource.PlayClipAtPoint(deathSound, transform.position, 1);
         
         GameManager GM = FindObjectOfType<GameManager>();
-        GM.StartCoroutine(GM.ResetGame());
-        
-        // p1Timer timer = GetComponent<p1Timer>();
-        // timer.SetTimer(0);
-        
+        GM.StartCoroutine(GM.ResetGame()); // Restarts the game, 10/04/2023.
+
         CinemachineBrain cinemachineBrain = FindObjectOfType<CinemachineBrain>();
         CinemachineVirtualCamera cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
 

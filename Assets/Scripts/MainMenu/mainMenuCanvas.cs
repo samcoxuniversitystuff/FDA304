@@ -27,6 +27,7 @@ public class mainMenuCanvas : MonoBehaviour
 
     public void OpenLvl01()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(firstLevelName);
     }
 
