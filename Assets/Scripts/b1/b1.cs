@@ -71,6 +71,21 @@ public class b1 : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        else if (!col.gameObject.CompareTag("Player"))
+        {
+            Destroy(this.gameObject);
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("WilboCoin"))
+        {
+            wCoin wilboCoin = other.gameObject.GetComponent<wCoin>();
+            wilboCoin.CollectMoney();
+            Destroy(this.gameObject);
+        }
     }
 
     private void Start()

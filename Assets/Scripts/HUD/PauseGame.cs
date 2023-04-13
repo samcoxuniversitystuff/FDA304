@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,12 @@ public class PauseGame : MonoBehaviour
     public static bool isPaused = false;
 
     [SerializeField] private string mainMenuName;
+
+    private void Awake()
+    {
+        CheckForWebGL();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,4 +78,13 @@ public class PauseGame : MonoBehaviour
     {
         SceneManager.LoadScene(mainMenuName);
     }
+
+    void CheckForWebGL()
+    {
+            #if UNITY_WEBGL
+            QuitButton.SetActive(false);
+            #endif
+    }
+    
+    
 }

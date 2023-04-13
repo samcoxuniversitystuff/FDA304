@@ -25,10 +25,15 @@ public class wCoin : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            AudioSource.PlayClipAtPoint(moneySound, transform.position);
-            p1Score playerScore = FindObjectOfType<p1Score>();
-            playerScore.AddScore(scoreToAdd);
-            Destroy(this.gameObject);
+            CollectMoney();
         }
+    }
+
+    public void CollectMoney()
+    {
+        AudioSource.PlayClipAtPoint(moneySound, transform.position);
+        p1Score playerScore = FindObjectOfType<p1Score>();
+        playerScore.AddScore(scoreToAdd);
+        Destroy(this.gameObject);
     }
 }

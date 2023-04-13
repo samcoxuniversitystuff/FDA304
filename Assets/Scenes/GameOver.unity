@@ -377,6 +377,7 @@ MonoBehaviour:
   firstlevelname: level01
   mainmenuname: mainmenu
   feedbackURL: https://docs.google.com/forms/d/e/1FAIpQLSfxgWVj_7qfMYk7f7CPlau4sbXQwcwBudupkQV7fGFWrJxBTQ/viewform?usp=pp_url&entry.1421539489=10_04_2023
+  quitButton: {fileID: 154003972}
 --- !u!1 &154003972
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &154003973
 RectTransform:
   m_ObjectHideFlags: 0
@@ -412,10 +413,10 @@ RectTransform:
   m_Father: {fileID: 344472503}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -87.5}
-  m_SizeDelta: {x: 100, y: 25}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154003974
 MonoBehaviour:

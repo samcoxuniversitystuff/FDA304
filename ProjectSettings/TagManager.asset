@@ -14,6 +14,7 @@ TagManager:
   - Wilbo
   - SaveFlag
   - Enemy3
+  - WilboCoin
   layers:
   - Default
   - TransparentFX

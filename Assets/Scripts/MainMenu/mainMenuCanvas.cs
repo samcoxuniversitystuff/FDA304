@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,16 +14,21 @@ public class mainMenuCanvas : MonoBehaviour
     
     [SerializeField] private string feedbackURL;
 
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject settingsButton;
+    [SerializeField] private GameObject quitButton;
+
+    private void Awake()
     {
-        
+        CheckForWebGL();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void CheckForWebGL()
     {
-        
+        #if UNITY_WEBGL
+        settingsButton.SetActive(false);
+        quitButton.SetActive(false);
+        #endif
     }
 
     public void OpenLvl01()
