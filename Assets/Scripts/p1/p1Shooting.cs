@@ -145,7 +145,7 @@ public class p1Shooting : MonoBehaviour
     {
         // Shows Player muzzle, then disables it.
         muzzleSprite.enabled = true;
-        _cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 1;
+        // _cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 1;
         StartCoroutine(disableMuzzle());
         AudioSource.PlayClipAtPoint(bulletSound, transform.position);
         GameObject newBullet = Instantiate(bullet, firePoint.transform.position, Quaternion.Euler(0, 0, _firingAngle));
@@ -158,7 +158,7 @@ public class p1Shooting : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         muzzleSprite.enabled = false;
-        _cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0;
+        // _cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0;
 
     }
 
