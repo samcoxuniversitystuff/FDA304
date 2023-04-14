@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -24,6 +25,7 @@ public class p1Shooting : MonoBehaviour
 
     [SerializeField] private SpriteRenderer fireCircleSprite;
     [SerializeField] private SpriteRenderer fireCircleArrowSprite;
+    [SerializeField] private SpriteRenderer muzzleSprite;
 
     public bool isShooting = true;
 
@@ -47,6 +49,9 @@ public class p1Shooting : MonoBehaviour
     [SerializeField] private GameObject swordGo;
     [SerializeField] private GameObject swordSpawnPoint;
 
+    private CinemachineVirtualCamera _cinemachineVirtualCamera;
+    private CinemachineBasicMultiChannelPerlin _cinemachineBasicMultiChannelPerlin;
+
     private void Awake()
     {
         Controls = new PolyDungeons();
@@ -57,6 +62,9 @@ public class p1Shooting : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         playerCamera = FindObjectOfType<Camera>();
         _p1Movement = FindObjectOfType<p1Movement>();
+        _cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
+        _cinemachineBasicMultiChannelPerlin = FindObjectOfType<CinemachineBasicMultiChannelPerlin>();
+        muzzleSprite.enabled = false;
     }
 
     private void Update()
@@ -135,10 +143,22 @@ public class p1Shooting : MonoBehaviour
     
     void ShootBullet()
     {
+        // Shows Player muzzle, then disables it.
+        muzzleSprite.enabled = true;
+        _cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 1;
+        StartCoroutine(disableMuzzle());
         AudioSource.PlayClipAtPoint(bulletSound, transform.position);
         GameObject newBullet = Instantiate(bullet, firePoint.transform.position, Quaternion.Euler(0, 0, _firingAngle));
         Rigidbody2D bulletRigidbody = newBullet.GetComponent<Rigidbody2D>();
         bulletRigidbody.velocity = _fireDirection * bulletForceAmount;
+
+    }
+
+    IEnumerator disableMuzzle()
+    {
+        yield return new WaitForSeconds(0.1f);
+        muzzleSprite.enabled = false;
+        _cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0;
 
     }
 

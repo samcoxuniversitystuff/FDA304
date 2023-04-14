@@ -39,7 +39,6 @@ public class b1 : MonoBehaviour
             p1Score playerScore = FindObjectOfType<p1Score>();
             playerScore.AddScore(1);
             
-            // Create cool explosion effects.
             // Instantiate(explosion, transform.position, quaternion.identity);
             AudioSource.PlayClipAtPoint(explosionPoint, transform.position, 1);
             

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreToAdd: 1
-  moneySound: {fileID: 8300000, guid: 1303f1c2b5a63754f92198f790b4b736, type: 3}
+  moneySound: {fileID: 8300000, guid: d039f360d4164e447af41c4a690715fe, type: 3}
   moneySoundVolume: 1
 --- !u!61 &1942331494
 BoxCollider2D:
