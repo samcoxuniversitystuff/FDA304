@@ -187,7 +187,7 @@ MonoBehaviour:
   gateTop: {fileID: 4794450336822385853}
   gateBottom: {fileID: 234542849521907581}
   gateKey: arena01
-  unlockSound: {fileID: 8300000, guid: 37f1ac2e0d232b8419ca0e7422804b5d, type: 3}
+  unlockSound: {fileID: 8300000, guid: 05a862095cc1ebc48933e23a8cbd2a88, type: 3}
   gateMoveAmount: 0.31
 --- !u!1 &4794450336822385853
 GameObject:

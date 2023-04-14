@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     
     [FormerlySerializedAs("ResetTime")] [SerializeField] private float resetTime = 3;
     bool isPaused = false;
+
+    [SerializeField] private string level01name = "level01";
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +32,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(resetTime);
         Time.timeScale = 1f;
-        int currentScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentScene);
+        SceneManager.LoadScene(level01name);
     }
 
     public IEnumerator RestartGame()
