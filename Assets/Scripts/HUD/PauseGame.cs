@@ -85,6 +85,11 @@ public class PauseGame : MonoBehaviour
             QuitButton.SetActive(false);
             #endif
     }
+
+    public bool GetPauseStatus()
+    {
+        return isPaused;
+    }
     
     
 }

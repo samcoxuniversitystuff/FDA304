@@ -52,6 +52,8 @@ public class p1Shooting : MonoBehaviour
     private CinemachineVirtualCamera _cinemachineVirtualCamera;
     private CinemachineBasicMultiChannelPerlin _cinemachineBasicMultiChannelPerlin;
 
+    PauseGame pauseScript;
+
     private void Awake()
     {
         Controls = new PolyDungeons();
@@ -64,6 +66,7 @@ public class p1Shooting : MonoBehaviour
         _p1Movement = FindObjectOfType<p1Movement>();
         _cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
         _cinemachineBasicMultiChannelPerlin = FindObjectOfType<CinemachineBasicMultiChannelPerlin>();
+        pauseScript = FindObjectOfType<PauseGame>();
         muzzleSprite.enabled = false;
     }
 
@@ -107,7 +110,7 @@ public class p1Shooting : MonoBehaviour
 
     public void Fire(InputAction.CallbackContext callbackContext)
     {
-        if (_canFire)
+        if (!pauseScript.GetPauseStatus() && _canFire)
         {
             if (isShooting)
             {
