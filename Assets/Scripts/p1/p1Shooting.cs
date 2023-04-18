@@ -149,8 +149,14 @@ public class p1Shooting : MonoBehaviour
         StartCoroutine(disableMuzzle());
         AudioSource.PlayClipAtPoint(bulletSound, transform.position);
         GameObject newBullet = Instantiate(bullet, firePoint.transform.position, Quaternion.Euler(0, 0, _firingAngle));
-        Rigidbody2D bulletRigidbody = newBullet.GetComponent<Rigidbody2D>();
-        bulletRigidbody.velocity = _fireDirection * bulletForceAmount;
+        // GameObject newBullet = ObjWorldPool.ObjInstance.GetBulletWorldObj();
+        if (newBullet != null)
+        {
+            Rigidbody2D bulletRigidbody = newBullet.GetComponent<Rigidbody2D>();
+            bulletRigidbody.velocity = _fireDirection * bulletForceAmount;
+            newBullet.SetActive(true);
+        }
+
 
     }
 
