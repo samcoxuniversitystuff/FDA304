@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level02.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level02.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldPool/ObjWorldPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorldPool/ObjWorldPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/p1/p1Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/eSpawner/enemySpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/polyDungeons/polyDungeons build 10_04_2023/polyDungeons Windows 10_04_2023\polyDungeons (build 10_04_2023).exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/polyDungeons/polyDungeons build 16_04_2023/polyDungeons Linux 16_04_2023/polyDungeons 16_04_2023.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Sam\Documents\Builds\polyDungeons Build 19_03_2023\polyDungeons Linux 19_03_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -182,6 +180,7 @@
       <workItem from="1681508582108" duration="1119000" />
       <workItem from="1681510577074" duration="1066000" />
       <workItem from="1681638737854" duration="110000" />
+      <workItem from="1681840901101" duration="609000" />
     </task>
     <servers />
   </component>

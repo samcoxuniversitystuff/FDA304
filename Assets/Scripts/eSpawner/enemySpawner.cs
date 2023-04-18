@@ -27,6 +27,7 @@ public class enemySpawner : MonoBehaviour
 
     private float _timer = 0;
     [SerializeField] private float maximumTimer = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +37,10 @@ public class enemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateTimer();
+        if (!spawnEnemy2)
+        {
+            UpdateTimer();
+        }
     }
 
     void UpdateTimer()
