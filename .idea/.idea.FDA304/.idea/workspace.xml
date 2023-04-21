@@ -60,7 +60,7 @@
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/polyDungeons/polyDungeons build 16_04_2023/polyDungeons Linux 16_04_2023/polyDungeons 16_04_2023.x86_64" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/polyDungeons/polyDungeons build 16_04_2023/polyDungeons Windows 16_04_2023\polyDungeons (build 16_04_2023).exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Sam\Documents\Builds\polyDungeons Build 19_03_2023\polyDungeons Linux 19_03_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -182,7 +182,7 @@
       <workItem from="1681510577074" duration="1066000" />
       <workItem from="1681638737854" duration="110000" />
       <workItem from="1681840901101" duration="609000" />
-      <workItem from="1682085409767" duration="406000" />
+      <workItem from="1682085409767" duration="805000" />
     </task>
     <servers />
   </component>
