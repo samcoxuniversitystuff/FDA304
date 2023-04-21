@@ -48,7 +48,7 @@ public class Wilbo1NPC : MonoBehaviour
 
     void UpdateWilboDialogue(int num)
     {
-        dialogBoxText.text = _wilboDialogueObj.dialogue[num];
+        dialogBoxText.text = _wilboDialogueObj.dialogue[num] + "\nCTRL";
     }
 
     private void OnTriggerEnter2D(Collider2D other)
