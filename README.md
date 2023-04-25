@@ -5,6 +5,8 @@ University project, made using Unity.
 # Art credits.
 Isometric assets: https://gvituri.itch.io/isometric-trpg.
 8-Direction Characters: https://axulart.itch.io/small-8-direction-characters
+Arrow symbol - red.png: https://commons.wikimedia.org/wiki/File:Arrow_symbol_-_red.png
+ISO 7010 E001.svg: https://commons.wikimedia.org/wiki/File:ISO_7010_E001.svg
 Remaining isometric art/Wilbo/Jim: Sam Cox. 
 
 # Sound credits. 
@@ -18,4 +20,12 @@ smashing glass.wav: https://freesound.org/people/mgamabile/sounds/440773/
 Keys Jingling 1_3: https://freesound.org/people/Joao_Janz/sounds/485108/
 Lazer shot: https://freesound.org/people/colorsCrimsonTears/sounds/566200/
 money.wav: https://freesound.org/people/saha213131/sounds/664049/
+
+Tutorials.
+Quaternion.Euler: Unity - Scripting API: Quaternion.Euler (unity3d.com): https://docs.unity3d.com/ScriptReference/Quaternion.Euler.html
+Top Down Shooting: https://youtu.be/LNLVOjbrQj4
+Unity New Input System: https://youtu.be/HmXU4dZbaMw
+Knockback: https://youtu.be/QnsGSCXknUY
+Tiles: https://youtu.be/OqwQBWEzcxU
+
 
