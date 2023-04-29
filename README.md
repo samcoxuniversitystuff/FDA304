@@ -27,5 +27,7 @@ Top Down Shooting: https://youtu.be/LNLVOjbrQj4
 Unity New Input System: https://youtu.be/HmXU4dZbaMw
 Knockback: https://youtu.be/QnsGSCXknUY
 Tiles: https://youtu.be/OqwQBWEzcxU
+Settings: https://youtu.be/YOaYQrN1oYQ
+Scrolling UI: https://youtu.be/ArH0S2Cdptk
 
 
