@@ -6,14 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f35bcbb0-9286-4b4d-9167-75f408166a42" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FDA304/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/s1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/s1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainmenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/settings.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/settings.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/settingsCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/settingsCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/s1/s1Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/s1/s1Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/URP/Settings/UniversalRP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/mainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/mainMenuCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +65,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/polyDungeons/polyDungeons v1.0/polyDungeons Linux v1.0/polyDungeons.x86_64" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/polyDungeons/polyDungeons v1.0/polyDungeons Windows v1.0\polyDungeons.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Sam\Documents\Builds\polyDungeons Build 19_03_2023\polyDungeons Linux 19_03_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -192,6 +190,7 @@
       <workItem from="1682085409767" duration="1401000" />
       <workItem from="1682147683332" duration="247000" />
       <workItem from="1682148454692" duration="3808000" />
+      <workItem from="1682774392138" duration="651000" />
     </task>
     <servers />
   </component>
