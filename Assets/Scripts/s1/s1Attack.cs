@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class s1Attack : MonoBehaviour
 {
+    [SerializeField] private AudioClip swordSound;
     [SerializeField] private AudioClip hitSound;
 
     private p1Shooting _playerShooting;
@@ -14,15 +15,10 @@ public class s1Attack : MonoBehaviour
     void Start()
     {
         _p1Movement = FindObjectOfType<p1Movement>();
-        
         _playerShooting = FindObjectOfType<p1Shooting>();
         _playerShooting.SetCanSpawnSword(false);
-    }
+        AudioSource.PlayClipAtPoint(swordSound, transform.position, 1);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -31,7 +27,7 @@ public class s1Attack : MonoBehaviour
         {
             p1Score playerScore = FindObjectOfType<p1Score>();
             playerScore.AddScore(1);
-            // AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
+            AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
             _playerShooting.SetCanSpawnSword(true);
             Destroy(col.gameObject);
             // Destroy(this.gameObject);
@@ -40,7 +36,7 @@ public class s1Attack : MonoBehaviour
         {
             e2Health _e2Health = col.gameObject.GetComponent<e2Health>();
             _e2Health.reduceHealth(25);
-            // AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
+            AudioSource.PlayClipAtPoint(hitSound, transform.position, 1);
             _playerShooting.SetCanSpawnSword(true);
             // Destroy(this.gameObject);
         }

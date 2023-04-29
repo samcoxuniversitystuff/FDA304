@@ -97,6 +97,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -125,7 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50163acc5aeb4747bcbdecf77c0fea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 0}
+  swordSound: {fileID: 8300000, guid: 8a5e1c65b9d928d4f862b37a12545fd8, type: 3}
+  hitSound: {fileID: 8300000, guid: 5e92953a749d6e6498e4c1112da1ab0b, type: 3}
 --- !u!111 &489462528175478099
 Animation:
   m_ObjectHideFlags: 0
