@@ -25,7 +25,6 @@ public class mainMenuCanvas : MonoBehaviour
     private void Awake()
     {
         CheckForWebGL();
-
     }
 
     private void Start()
