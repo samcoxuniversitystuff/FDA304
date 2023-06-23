@@ -141,6 +141,7 @@ public class p1Shooting : MonoBehaviour
         lookPosition = playerCamera.ScreenToWorldPoint(_mousePosition);
         _fireDirection = lookPosition - _rigidbody2D.position;
         _firingAngle = Mathf.Atan2(_fireDirection.y, _fireDirection.x) * Mathf.Rad2Deg - 90f;
+        // Thanks to theChief on Discord for help with the following line:
         fireCirclePivotPoint.transform.rotation = Quaternion.Euler(0, 0, _firingAngle);
     }
     
